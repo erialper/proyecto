@@ -1,0 +1,398 @@
+{
+  "data": {
+    "parcial": [
+      {
+        "semana": [
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 1: Introducción a la Programación",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 2: Variables y Tipos de datos",
+                "lectura": "Usando el intérprete de Python (Pág 5-12) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": true,
+                "deber": true,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 2: Variables y Tipos de datos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 3: Estructuras de Control",
+                "lectura": "Más herramientas para control de flujo (Pág 16-18) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 3: Estructuras de Control",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 3: Estructuras de Control",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 4: Listas",
+                "lectura": "Listas (Pág 13 - 14 hasta \"Pasos hacia la programación \", 16-17,  27 y 28) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 4: Listas",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 4: Listas",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 4: Listas",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "An introducción to Numpy and Scipy (Pag 3, 4, 5, 7-15) (5)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semana": [
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 6: Funciones",
+                "lectura": "Definiendo funciones (Pág 19-24) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 6: Funciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 6: Funciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 6: Funciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 6: Funciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 7: Colecciones",
+                "lectura": "Tuplas y secuencias (Pág 31-33) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 7: Colecciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 7: Colecciones",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 8: Archivos",
+                "lectura": "Leyendo y escribiendo archivos (Pág 46-49) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 8: Archivos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 8: Archivos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 9: Procesamiento de Datos",
+                "lectura": "Importing data using pandas (Pág 99-107) (1)",
+                "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
+                "controlLectura": true,
+                "leccion": false,
+                "taller": false,
+                "deber": true,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 9: Procesamiento de Datos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 9: Procesamiento de Datos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": true,
+                "taller": true,
+                "deber": false,
+                "proyecto": false
+              }
+            ]
+          },
+          {
+            "clase": [
+              {
+                "tema": "Capítulo 9: Procesamiento de Datos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": false
+              },
+              {
+                "tema": "Capítulo 9: Procesamiento de Datos",
+                "lectura": "",
+                "linkLectura":"",
+                "controlLectura": false,
+                "leccion": false,
+                "taller": false,
+                "deber": false,
+                "proyecto": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
