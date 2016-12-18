@@ -21,6 +21,14 @@
 	border-left: 1px solid gray;
 }
 
+#carrucel{
+	margin-bottom: 1%;
+}
+
+#carrucel .item{
+	width: 100%;
+	height: auto;	
+}
 
 /*plantila*/
 /* 1. General */
@@ -49,8 +57,8 @@ h1,h2, h3, h4, h5, h6 {
 }
 /* 2. layout */
 
-.container {
-	padding:0 20px 0 20px;
+.container{
+	padding:0 75px 0 75px;
 	position:relative;
 }
 
