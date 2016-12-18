@@ -1,8 +1,24 @@
 var sched;
 
 function mostrarSemana(parcial, semana) {
-	$("contenido").empty;
 	console.log("Parcial: "+parcial, " semana: "+semana);
+	sched.parcial[parcial].semana[semana].clase.forEach(function (c, i) {
+		$("#clase"+(i+1)).empty();
+		$("#clase"+(i+1)).append($("<h2>").text("Clase "+(i+1)));
+		$("#clase"+(i+1)).append($("<h3>").text(c.tema));
+		if (c.controlLectura) {
+			$("#clase"+(i+1)).append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura}).text(c.lectura)))
+		}
+		if (c.leccion) {
+			$("#clase"+(i+1)).append($("<p>").text("Se tomará una Lección"));
+		}
+		if (c.taller) {
+			$("#clase"+(i+1)).append($("<p>").text("Se realizará un taller"));
+		}
+		if (c.deber){
+			$("#clase"+(i+1)).append($("<p>").text("Se revisará el deber"));
+		}
+	});
 }
 
 $(document).ready(function(){

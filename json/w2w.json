@@ -7,6 +7,10 @@
             "clase": [
               {
                 "tema": "Capítulo 1: Introducción a la Programación",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -17,6 +21,10 @@
               },
               {
                 "tema": "Capítulo 2: Variables y Tipos de datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Usando el intérprete de Python (Pág 5-12) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -31,6 +39,10 @@
             "clase": [
               {
                 "tema": "Capítulo 2: Variables y Tipos de datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -41,6 +53,10 @@
               },
               {
                 "tema": "Capítulo 3: Estructuras de Control",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Más herramientas para control de flujo (Pág 16-18) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -55,6 +71,10 @@
             "clase": [
               {
                 "tema": "Capítulo 3: Estructuras de Control",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -65,6 +85,10 @@
               },
               {
                 "tema": "Capítulo 3: Estructuras de Control",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -79,6 +103,10 @@
             "clase": [
               {
                 "tema": "Capítulo 4: Listas",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Listas (Pág 13 - 14 hasta \"Pasos hacia la programación \", 16-17,  27 y 28) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -89,6 +117,10 @@
               },
               {
                 "tema": "Capítulo 4: Listas",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -103,6 +135,10 @@
             "clase": [
               {
                 "tema": "Capítulo 4: Listas",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -113,6 +149,10 @@
               },
               {
                 "tema": "Capítulo 4: Listas",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -127,6 +167,10 @@
             "clase": [
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "An introducción to Numpy and Scipy (Pag 3, 4, 5, 7-15) (5)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -137,6 +181,10 @@
               },
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -151,6 +199,10 @@
             "clase": [
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -161,6 +213,10 @@
               },
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -175,6 +231,10 @@
             "clase": [
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -185,6 +245,10 @@
               },
               {
                 "tema": "Capítulo 5: Arreglos N-dimensionales",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -203,6 +267,10 @@
             "clase": [
               {
                 "tema": "Capítulo 6: Funciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Definiendo funciones (Pág 19-24) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -213,6 +281,10 @@
               },
               {
                 "tema": "Capítulo 6: Funciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -227,6 +299,10 @@
             "clase": [
               {
                 "tema": "Capítulo 6: Funciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -237,6 +313,10 @@
               },
               {
                 "tema": "Capítulo 6: Funciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -251,6 +331,10 @@
             "clase": [
               {
                 "tema": "Capítulo 6: Funciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -261,6 +345,10 @@
               },
               {
                 "tema": "Capítulo 7: Colecciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Tuplas y secuencias (Pág 31-33) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -275,6 +363,10 @@
             "clase": [
               {
                 "tema": "Capítulo 7: Colecciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -285,6 +377,10 @@
               },
               {
                 "tema": "Capítulo 7: Colecciones",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -299,6 +395,10 @@
             "clase": [
               {
                 "tema": "Capítulo 8: Archivos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Leyendo y escribiendo archivos (Pág 46-49) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -309,6 +409,10 @@
               },
               {
                 "tema": "Capítulo 8: Archivos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -323,6 +427,10 @@
             "clase": [
               {
                 "tema": "Capítulo 8: Archivos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -333,6 +441,10 @@
               },
               {
                 "tema": "Capítulo 9: Procesamiento de Datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "Importing data using pandas (Pág 99-107) (1)",
                 "linkLectura":"http://docs.python.org.ar/tutorial/pdfs/TutorialPython3.pdf",
                 "controlLectura": true,
@@ -347,6 +459,10 @@
             "clase": [
               {
                 "tema": "Capítulo 9: Procesamiento de Datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -357,6 +473,10 @@
               },
               {
                 "tema": "Capítulo 9: Procesamiento de Datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -371,6 +491,10 @@
             "clase": [
               {
                 "tema": "Capítulo 9: Procesamiento de Datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
@@ -381,6 +505,10 @@
               },
               {
                 "tema": "Capítulo 9: Procesamiento de Datos",
+                "video": false,
+                "linkVideo": "",
+                "diapositiva": false,
+                "linkDiapositiva": "",
                 "lectura": "",
                 "linkLectura":"",
                 "controlLectura": false,
