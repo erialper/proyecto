@@ -38,6 +38,7 @@ body {
   li {
     float: none;
     margin: 0;
+    color: blue;
      }
     a {
       margin-right: 0;
@@ -58,14 +59,24 @@ body {
     float: none;
 }
 .tab-content {
-  margin-left: 45px;
+  /*margin-left: 4px;*/
+
   }
     .tab-pane {
     display: none;
     background-color: #fff;
-    padding: 1.6rem;
-    overflow-y: auto;
+    /*padding: 1.6rem;*/
+    margin-left: 1%;
+
+    overflow: auto;
     }
   
   .active { display: block; }
 
+#politicas{
+    width: 320%;
+    height: 90%;
+}
+#c{
+    width: 80%;
+}
