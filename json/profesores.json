@@ -1,0 +1,12 @@
+[
+	{"nombres":"Jhonny Vladimar","apellidos":"Pincay Nieves","correo":"jvpincay@espol.edu.ec","paralelo":"1","oficina":"15A","coordinador":"False","img":""},
+	{"nombres":"Cruz Maria","apellidos":"Falcones Montesdeoca","correo":"cfalcone@espol.edu.ec","paralelo":"2, 6","oficina":"15A","coordinador":"False","img":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/2c3/298/13e6555.jpg"},
+	{"nombres":"Carmen Karina","apellidos":"Vaca Ruiz","correo":"cvaca@espol.edu.ec","paralelo":"3","oficina":"15A","coordinador":"True","img":"http://expreso.ec/documents/10157/0/512x428/0c0/0d0/none/12113/EQMF/19734686.jpg"},
+	{"nombres":"Marco Antonio","apellidos":"Calderon Arguello","correo":"ancalder@espol.edu.ec","paralelo":"4","oficina":"24A","coordinador":"True","img":"https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg"},
+	{"nombres":"Luis Enrique","apellidos":"Rodriguez Ojeda","correo":"lrodrig@espol.edu.ec","paralelo":"5","oficina":"15A","coordinador":"False","img":""},
+	{"nombres":"Rafael Ignacio","apellidos":"Bonilla","correo":"rabonilla@espol.edu.ec","paralelo":"7, 8","oficina":"15A","coordinador":"False","img":"https://pbs.twimg.com/profile_images/689133838367387648/Ob8dxtXH.jpg"},
+	{"nombres":"Wendy Paola","apellidos":"Yanez Pazmiño","correo":"wenpayan@espol.edu.ec","paralelo":"9","oficina":"15A","coordinador":"False","img":""},
+	{"nombres":"Eduardo Segundo","apellidos":"Cruz Ramirez","correo":"escruz@espol.edu.ec","paralelo":"10","oficina":"24A-211","coordinador":"False","img":"https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/eduardocruz2.jpg"},
+	{"nombres":"Jorge Antonio","apellidos":"Magallanes Borbor","correo":"jmagalla@espol.edu.ec","paralelo":"11","oficina":"24A","coordinador":"False","img":"https://i.ytimg.com/vi/RKXFp7YwMuM/maxresdefault.jpg"},
+	{"nombres":"Ana Teresa","apellidos":"Tapia Rosero","correo":"atapia@espol.edu.ec","paralelo":"12","oficina":"24A","coordinador":"False","img":"https://i.ytimg.com/vi/eX4d1eU98n0/hqdefault.jpg"}
+]

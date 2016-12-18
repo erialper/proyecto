@@ -26,7 +26,7 @@
 						</div>
 						<div class="collapse navbar-collapse" id="navbar-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active"> <a href="index.html">Inicio</a> </li>
+								<li> <a href="index.html">Inicio</a> </li>
 								<li class="dropdown"> 
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
 										Curso <span class="caret"></span>
@@ -39,7 +39,7 @@
 									</ul>
 								</li>
 								<li> <a href="#">Ayudantias</a> </li>
-								<li> <a href="#">Equipo</a> </li>								
+								<li class="active"> <a href="#">Equipo</a> </li>								
 								<li> <a href="#" class="login"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a> </li>
 							</ul>
 						</div>
@@ -47,12 +47,12 @@
 				</nav>
 			</header>
 			<div class="container-fluid">
-			  <div class="row content">
+				<div class="row content">
 				<div class="col-sm-3 sidenav">
 				  <h4>Equipo</h4>
 				  <ul class="nav nav-pills nav-stacked">
 					<li><a href="equipo.html">Coordinador</a></li>
-					<li class="active"><a href="#">Profesores</a></li>
+					<li class="active" id="profe"><a href="#">Profesores</a></li>
 					<li><a href="equipo3.html">Ayudantes de Clases</a></li>
 					<li><a href="equipo4.html">Ayudantes de Tareas</a></li>
 				  </ul><br>
@@ -60,66 +60,82 @@
 				<div class="col-sm-9">
 				  <h4><small>Profesores</small></h4>
 				  <hr>
-				 </div>
-			</div>
-					
-			<footer>
-				<div class="container2">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="widget">
-								<h5 class="widgetheading">Get in touch with us</h5>
-								<address>
-								<strong>Moderna company Inc</strong><br>
-								 Modernbuilding suite V124, AB 01<br>
-								 Someplace 16425 Earth </address>
-								<p>
-									<i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-									<i class="icon-envelope-alt"></i> email@domainname.com
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="widget">
-								<h5 class="widgetheading">Pages</h5>
-								<ul class="link-list">
-									<li><a href="#">Press release</a></li>
-									<li><a href="#">Terms and conditions</a></li>
-									<li><a href="#">Privacy policy</a></li>
-									<li><a href="#">Career center</a></li>
-									<li><a href="#">Contact us</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="widget">
-								<h5 class="widgetheading">Latest posts</h5>
-								<ul class="link-list">
-									<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-									<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-									<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+				 	<div class="table-responsive">
+					<table class="table">
+				    	<thead>
+				     	<tr>
+				        	<th>#</th>
+				        	<th>Nombre</th>
+				        	<th>Apellido</th>
+				        	<th>Correo</th>
+				        	<th>Paralelo</th>
+				        	<th>Oficina</th>
+				      	</tr>
+				    	</thead>
+				    	<tbody>
+				      	
+				    	</tbody>
+				  	</table>
+				  </div>
 				</div>
-				<div id="sub-footer">
+				</div>	
+				<footer>
 					<div class="container2">
 						<div class="row">
-							<div class="col-lg-6">
-								<div class="copyright">
-									<P>Guayaquil, Ecuador</p>
-									<p>© Escuela Superior Politecnica del Litoral. All right reserved.</p>
+							<div class="col-lg-4">
+								<div class="widget">
+									<h5 class="widgetheading">Get in touch with us</h5>
+									<address>
+									<strong>Moderna company Inc</strong><br>
+									 Modernbuilding suite V124, AB 01<br>
+									 Someplace 16425 Earth </address>
+									<p>
+										<i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+										<i class="icon-envelope-alt"></i> email@domainname.com
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="widget">
+									<h5 class="widgetheading">Pages</h5>
+									<ul class="link-list">
+										<li><a href="#">Press release</a></li>
+										<li><a href="#">Terms and conditions</a></li>
+										<li><a href="#">Privacy policy</a></li>
+										<li><a href="#">Career center</a></li>
+										<li><a href="#">Contact us</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="widget">
+									<h5 class="widgetheading">Latest posts</h5>
+									<ul class="link-list">
+										<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+										<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+										<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
+					<div id="sub-footer">
+						<div class="container2">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="copyright">
+										<P>Guayaquil, Ecuador</p>
+										<p>© Escuela Superior Politecnica del Litoral. All right reserved.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  		<script src="js/equipo2.js"></script>
 	</body>
 
 </html>
