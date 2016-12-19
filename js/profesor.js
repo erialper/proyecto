@@ -23,6 +23,13 @@ function agregarProyecto(){
 	    )
 	)
 
+	$("#descrip").val("");
+	$("#titulo").val("");
+	$("#autor").val("");
+	$("#etiq").val("");
+
+	/*$("#info_ejerc").hide();*/
+
 	console.log("Se agrego elemento");
 }
 
