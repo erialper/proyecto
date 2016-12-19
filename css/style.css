@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
 
+hr{
+	margin-bottom: 0;
+}
+
 .navbar-brand {
   padding: 0px;
 }
@@ -13,6 +17,13 @@
   float: left;
 }
 
+.jumbotron{
+	margin-bottom: 1%;
+}
+.container .jumbotron, .container-fluid .jumbotron{
+	border-radius: 0;
+}
+
 .jumbotron h1{
 	font-size: 45px;
 }
@@ -21,6 +32,18 @@
 	border-left: 1px solid gray;
 }
 
+#carrucel{
+	margin-bottom: 1%;
+}
+
+#carrucel .item{
+	width: 100%;
+	height: auto;	
+}
+
+.navbar-right .dropdown-menu{
+	left: 0;
+}
 
 /*plantila*/
 /* 1. General */
@@ -49,8 +72,13 @@ h1,h2, h3, h4, h5, h6 {
 }
 /* 2. layout */
 
-.container {
-	padding:0 20px 0 20px;
+.container{
+	padding:0 75px 0 75px;
+	position:relative;
+}
+
+.container2{
+	padding:0 70px 10px 70px;
 	position:relative;
 }
 
@@ -147,7 +175,7 @@ header  .navbar-nav > li > a {
 }
 
 header .nav .caret {
-    border-bottom-color: #f5f5f5;
+    border-bottom-color:#f5f5f5;
     border-top-color: #f5f5f5;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -165,7 +193,7 @@ header .nav .caret {
     box-shadow: none;
     border-radius: 0;
 	border: none;
-
+	top:60%;
 }
 
 /* --- menu --- */
