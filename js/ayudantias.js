@@ -17,7 +17,7 @@ $(document).ready(function () {
 				.append($("<th>").text(item.ayudante))
 				.append($("<th>").text(item.aula))
 				.append($("<th>").text(item.edificio))
-				.append($("<th>").append($("<button>",{"id":"bt0", "type":"button", "class":"btn btn-primary", "data-toggle":"modal", "data-target":"#myModal"})
+				.append($("<th>").append($("<button>",{"type":"button", "class":"btn btn-primary", "data-toggle":"modal", "data-target":"#myModal"})
 					.text("Mapa")
 					.click(function () {
 						showMap(item.mapa);
