@@ -26,17 +26,15 @@ $(document).ready(function(){
 	$.getJSON(url, function(resp){
 		sched=resp.data;
 		resp.data.parcial.forEach(function(par, i){
-			liParc=$("<li>",{"id":"liParc"+(i+1)}).append($("<a>", {"href":"#", "id":"aparc"+(i+1)}).text("Parcial "+ (i+1)));
-			$("#listParc").append(liParc)
-			ulSem=($("<ul>", {"id":"ulSemanas"+(i+1)}))
-			liParc.append(ulSem)
+			$("#listPanel").append($("<a>",{"href":"#semanas"+(i+1), "class":"list-group-item list-group-item-success", "data-toggle":"collapse", "data-parent":"#asideSemanas"})
+				.text("Parcial "+ (i+1)))
+			.append($("<div>", {"class":"collapse", "id":"semanas"+(i+1)}));
 			par.semana.forEach(function(sem, index){
-				aSem=$("<a>", {"href":"#", "id":"asem"+(index+1)}).text("Semana "+ (index+1))
-				liSem=$("<li>",{"id":"liSem"+(index+1)}).append(aSem);
-				ulSem.append(liSem);
-				aSem.click(function () {
-					mostrarSemana(i,index);
-				});
+				$("#semanas"+(i+1)).append($("<a>",{"href":"#", "class":"list-group-item"})
+					.text("Semana "+ (index+1))
+					.click(function(){
+						mostrarSemana(i, index);
+					}));
 				//console.log("Semana: ", i+1);
 				/*sem.clase.forEach(function(item, i){
 					console.log("Clase: ", i+1);
