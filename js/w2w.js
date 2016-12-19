@@ -56,23 +56,26 @@ function mostrarClase(parcial, semana, clase) {
 		$("#seccionClases").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
 	}
 	if (c.controlLectura) {
-		$("#seccionClases").append($("<div>",{"class":"divLectura"})
+		$("#seccionClases").append($("<div>",{"id":"divLectura"})
 			.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura}).text(c.lectura)))
-			.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
-				.append($("<iframe>", {"src":c.linkCap})))
-			)
+			.append($("<a>",{"href":"#ocultarLectura", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
+			.append($("<div>",{"id":"ocultarLectura", "class":"collapse in"})
+				.append($("<div>",{"class":"embed-responsive embed-responsive-4by3"})
+					.append($("<iframe>", {"src":c.linkCap})))))
 	}
 	if(c.diapositiva){
-		$("#seccionClases").append($("<div>",{"class":"divDiapositiva"})				
-			.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
-				.append($("<iframe>", {"src":c.linkDiapositiva})))
-			)
+		$("#seccionClases").append($("<div>",{"class":"divDiapositiva"})
+			.append($("<a>",{"href":"#ocultarDiapositiva", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
+			.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
+				.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
+					.append($("<iframe>", {"src":c.linkDiapositiva})))))
 	}
 	if(c.video){
-		$("#seccionClases").append($("<div>",{"class":"divVideo"})				
-			.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
-				.append($("<iframe>", {"src":c.linkVideo})))
-			)
+		$("#seccionClases").append($("<div>",{"class":"divVideo"}) 
+			.append($("<a>",{"href":"#ocultarDiapositiva", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
+			.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
+				.append($("<div>",{ "class":"embed-responsive embed-responsive-16by9"})
+					.append($("<iframe>", {"src":c.linkVideo})))))
 	}
 }
 
