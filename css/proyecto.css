@@ -66,7 +66,9 @@ body {
 }
 
 
-
+.nav-pills>nav{
+	margin-left: 800px;
+}
 
 .navbar-brand>img {
   height: 49px;
@@ -132,7 +134,7 @@ hr{
 
 #form-main{
 	width:100%;
-	float:right;
+	float:left;
 	padding-top:0px;
 }
 
