@@ -12,6 +12,8 @@
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/curso.css">
 
+
+
 		
 
 		<script src="js/cursoScript.js"></script>
@@ -40,22 +42,22 @@
 
 						<div class="collapse navbar-collapse" id="navbar-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active"> <a href="#">Inicio</a> </li>
-								<li> <a href="#">Curso</a> </li>
-								<li> <a href="#">Semana</a> </li>
-								<li> <a href="#">Equipo</a> </li>
-								<li> <a href="#">Ayudantias</a> </li>								
+								<li class="active"> <a href="index.html">Inicio</a> </li>
+								<li> <a id="cambioColor" href="curso.html">Curso</a> </li>
+								<li> <a id="cambioColor" href="#">Semana</a> </li>
+								<li> <a id="cambioColor" href="#">Equipo</a> </li>
+								<li> <a id="cambioColor" href="#">Ayudantias</a> </li>								
 								<li class="dropdown"> 
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+									<a id="cambioColor" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
 										Sandbox <span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Profesor</a></li>
-										<li><a href="#">Alumno</a></li>
+										<li><a id="cambioColor" href="#">Profesor</a></li>
+										<li><a id="cambioColor" href="#">Alumno</a></li>
 									</ul>
 								</li>
-								<li> <a href="#">Proyectos</a> </li>
-								<li> <a href="perfil.html">Perfil</a> </li>
+								<li> <a id="cambioColor" href="proyecto.html">Proyectos</a> </li>
+								<li> <a id="cambioColor" href="perfil.html">Perfil</a> </li>
 							</ul>
 						</div>
 
@@ -65,51 +67,57 @@
 		</div>
 	
 			<section>
-				<!--<div class="course">
-							<ul class="nav nav-tabs">
-								  <li><a>Descripcion</a></li>
-								  <li><a href="#">Sylabuss</a></li>
-								  <li><a href="#contact">Requisitos</a></li>
-								  <li><a href="#about">Politicas</a></li>
-							</ul>		
-				</div>-->
-							<fieldset>
-								<div class="container">
-								
-								
-  									<div class="row">
-  									<legend>Información</legend>
+							<div class="container">	
+								<fieldset>
+  									<div class="row"><br><br>
+  									<legend style="cursor:not-allowed">Información</legend>
    										 <div class="col-md-12 col-sm-7">
      										 <div class="tabs-left">
        											 <ul class="nav nav-tabs">
-											          <li class="list-inline"><a href="#descripcion" data-toggle="tab">Descripción</a></li>
+											          <li class="course list-inline"><a href="#descripcion" data-toggle="tab">Descripción</a></li>
 											          <li class="list-inline"><a href="#requisitos" data-toggle="tab">Requisitos</a></li>
 											          <li class="list-inline"><a href="#syllabus" data-toggle="tab">Sylabus</a></li>
 											          <li class="list-inline"><a href="#politicas" data-toggle="tab">Politicas del curso</a></li>
         										</ul>
         									
         									
-											
+											<!--Esta es la parte del contenido central donde al dar click en cualquiera de la lista debera mostrar lo que se pida por parte del usuario-->
 	        									<div class="tab-content">
-	        										<div class="tab-pane" id="descripcion"><p class="navbar-text">Conectado como "Nombre Apellidos"</p></div>
-	         								 		<div class="tab-pane" id="requisitos">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
-											        <div class="tab-pane" id="syllabus"><embed id ="politicas" src="informacionCurso/ProgramaAnalitico.pdf"></div>
-											        <div class="tab-pane" id="politicas">EEEEEThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+	        										<div class="tab-pane" id="descripcion"><div id="parrafo"><br><hr><br><p> El curso presenta a los estudiantes estrategias para resolver problemas comunes en diversas profesiones por medio del diseño e implementacion de soluciones basadas en el uso de un lenguaje de programacion. Cubre los principios básicos para que el estudiantes pueda leer y escribir progrmas; haciendo énfasis en el diseño y ánalisis de algoritmos. Ádemas, introduce a los estudiantes en el uso de herramientas de desarrollo y depuración<hr></p></div></div>
+	         								 		<div class="tab-pane" id="requisitos"><div id="parrafo">
+	         								 			<div id="cont"><br></b><br><hr id="req">
+	         								 			<table>
+															  <tr>
+															    <th>PreRequisito</th>
+															    <th>Correquisito</th>
+															  </tr>
+															  <tr>
+															    <td>Herramientas de Colaboración Digital.</td>
+															    <td>Ninguno</td>
+															  </tr>
+														</table>
+														<hr id="req">
+														</div>
+	         								 		</div></div>
+											        <div class="tab-pane" id="syllabus"><embed id ="syllabus" src="informacionCurso/ProgramaAnalitico.pdf"></div>
+											        <div class="tab-pane" id="politicas"><embed id ="politicas" src="informacionCurso/Politicas.pdf"></div>
 										        </div><!-- /tab-content -->
 									        </div><!-- /tab -->
       										<!--</div><-->
    									 	</div>
   									</div><!-- /row -->
-  								
-								
-								</div><!-- /container -->
-								</fieldset>
-							
-								
+  								</fieldset>			
+							</div><!-- /container -->
+					
 			</section>
+	
+		<!--PIE DE PAGINA-->
+<div class="footer">
 
-		
-
+		<footer>
+		This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.
+		</footer>
+</div>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -1,0 +1,49 @@
+{
+  "ayudantias": [
+    {
+      "dia": "Lunes",
+      "horaInicio": "7:30",
+      "horaFin": "8:30",
+      "ayudante": "Pedro Pérez",
+      "aula": "A-201",
+      "edificio": "24A",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7554321107966!2d-79.96645217078604!3d-2.1453639999022505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNDMuMyJTIDc5wrA1Nyc1Ny4zIlc!5e0!3m2!1ses-419!2sec!4v1482161535140"
+    },
+    {
+      "dia": "Martes",
+      "horaInicio": "11:30",
+      "horaFin": "12:30",
+      "ayudante": "Luís Gonzales",
+      "aula": "A-205",
+      "edificio": "24A",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7554321107966!2d-79.96645217078604!3d-2.1453639999022505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNDMuMyJTIDc5wrA1Nyc1Ny4zIlc!5e0!3m2!1ses-419!2sec!4v1482161535140"
+    },
+    {
+      "dia": "Miercoles",
+      "horaInicio": "14:30",
+      "horaFin": "15:30",
+      "ayudante": "Laura García",
+      "aula": "A-105",
+      "edificio": "24A",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7554321107966!2d-79.96645217078604!3d-2.1453639999022505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNDMuMyJTIDc5wrA1Nyc1Ny4zIlc!5e0!3m2!1ses-419!2sec!4v1482161535140"
+    },
+    {
+      "dia": "Jueves",
+      "horaInicio": "9:00",
+      "horaFin": "10:00",
+      "ayudante": "Rosa Freire",
+      "aula": "BA-26",
+      "edificio": "32A",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7544842188205!2d-79.96724817078609!3d-2.146817999902186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNDguNSJTIDc5wrA1OCcwMC4xIlc!5e0!3m2!1ses-419!2sec!4v1482163723791"
+    },
+    {
+      "dia": "Viernes",
+      "horaInicio": "7:30",
+      "horaFin": "8:30",
+      "ayudante": "Jose Chávez",
+      "aula": "31B100",
+      "edificio": "31B",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7534332257513!2d-79.96778717078602!3d-2.148428999902118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNTQuMyJTIDc5wrA1OCcwMi4xIlc!5e0!3m2!1ses-419!2sec!4v1482163791870"
+    }
+  ]
+}
