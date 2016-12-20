@@ -5,7 +5,7 @@ function cargar(){
 	$.getJSON(url,function(resul){
 		resul.forEach(function(item){
 			i++
-			$(".table tbody").append($("<tr></tr>").append("<td>"+ i +"</td><td>"+ item.nombres + "</td><td>" + item.apellidos + "</td><td>" + item.correo + "</td><td>" + item. paralelo + "</td><td>" + item.oficina + "</td"))
+			$(".table tbody").append($("<tr></tr>").append("<td>"+ i +"</td><td>"+ item.nombres + "</td><td>" + item.apellidos + "</td><td>" + item.correo + "</td><td>" + item. paralelo + "</td><td>" + item.oficina + "</td>"))
 		})
 		
 	})

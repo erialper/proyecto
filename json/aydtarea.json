@@ -1,0 +1,12 @@
+[
+	{"nombres":"Juan","apellidos":"Pincay","correo":"jpincay@espol.edu.ec","paralelo":"1","aula":"Sala de Ayudantes","horario":"LU 11H30"},
+	{"nombres":"Matilde","apellidos":"Falcones","correo":"mfalcone@espol.edu.ec","paralelo":"2, 6","aula":"Sala de Ayudantes","horario":"MA 12H30"},
+	{"nombres":"Karen","apellidos":"Ruiz","correo":"kruiz@espol.edu.ec","paralelo":"3","aula":"Sala de Ayudantes","horario":"MA 12H30"},
+	{"nombres":"Angel","apellidos":"Calderon","correo":"ancalder@espol.edu.ec","paralelo":"4","aula":"Sala de Ayudantes","horario":"VI 07H30"},
+	{"nombres":"Lorenzo","apellidos":"Ojeda","correo":"lojeda@espol.edu.ec","paralelo":"5","aula":"Sala de Ayudantes","horario":"VI 12H30"},
+	{"nombres":"Ronaldo","apellidos":"Bonilla","correo":"rbonilla@espol.edu.ec","paralelo":"7, 8","aula":"Sala de Ayudantes","horario":"MI 18H30"},
+	{"nombres":"Wendy","apellidos":"Yanez","correo":"wenpayan@espol.edu.ec","paralelo":"9","aula":"Sala de Ayudantes","horario":"LU 17H30"},
+	{"nombres":"Estefano","apellidos":"Cruz","correo":"escruz@espol.edu.ec","paralelo":"10","aula":"Sala de Ayudantes","horario":"MI 10H30"},
+	{"nombres":"Jorge","apellidos":"Magallanes","correo":"jmagalla@espol.edu.ec","paralelo":"11","aula":"Sala de Ayudantes","horario":"JU 16H30"},
+	{"nombres":"Ana","apellidos":"Tapia","correo":"atapia@espol.edu.ec","paralelo":"12","aula":"Sala de Ayudantes","horario":"MI 10H30"}
+]

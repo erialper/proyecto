@@ -78,7 +78,17 @@
 
 <!--Esta es la parte del formulario del profesor que debe llenar-->
 <section>
-<hr>
+<hr><br>
+		<section>
+
+<ul class="nav nav-pills">
+    <li><a href="visualizarProyecto.html">Visualizar Proyectos</a></li>
+
+      </ul>
+
+</section>
+
+
 		<div id="form-main">
   			<div id="form-div">
     			<form class="form" id="form1">
@@ -86,12 +96,21 @@
 				       <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Título" id="name" />
 				    </p>
 				    <p class="text">
-				       <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Descripción"></textarea>
+				    	
+				    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Descripción"></textarea>   
 				    </p>
+
+					
+					<p class="archivo">
+       				 <input name="email" type="file" class="feedback-input" id="email" placeholder="subir Archivo" />
+      				</p>
+					
+
 				  	<div>
 						<label for="date">Fecha de Entrega:</label>
 						<input id="date" type="date">
 					</div>
+
   
 			     	<div class="submit">
 			        	<input type="submit" value="Guardar" id="button-blue"/>
@@ -104,13 +123,7 @@
 </section>
 
 
-<!--PIE DE PAGINA-->
-<div class="footer">
 
-		<footer>
-		This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.
-		</footer>
-</div>	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

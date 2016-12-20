@@ -30,6 +30,7 @@ function inicio(){
 	else if ( $("#usrname").val() === "estudiante" && $("#psw").val() === "estudiante") {
 		$("#icon").attr('class','glyphicon glyphicon-user');		
 		$("#texto").text("Estudiante");
+		$("#sandbox").attr('href','sb_estd.html');		
 		limpiarCampos();
 		$("#myModal").modal('toggle');
 	} 

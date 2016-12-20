@@ -1,12 +1,12 @@
 [
-	{"nombres":"Jhonny","apellidos":"Pincay Nieves","correo":"jvpincay@espol.edu.ec","paralelo":"1","oficina":"15A","coordinador":"False","img":""},
-	{"nombres":"Maria","apellidos":"Falcones Montesdeoca","correo":"cfalcone@espol.edu.ec","paralelo":"2, 6","oficina":"15A","coordinador":"False","img":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/000/2c3/298/13e6555.jpg"},
-	{"nombres":"Karina","apellidos":"Vaca Ruiz","correo":"cvaca@espol.edu.ec","paralelo":"3","oficina":"15A","coordinador":"True","img":"http://expreso.ec/documents/10157/0/512x428/0c0/0d0/none/12113/EQMF/19734686.jpg"},
-	{"nombres":"Antonio","apellidos":"Calderon Arguello","correo":"ancalder@espol.edu.ec","paralelo":"4","oficina":"24A","coordinador":"True","img":"https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg"},
-	{"nombres":"Luis","apellidos":"Rodriguez Ojeda","correo":"lrodrig@espol.edu.ec","paralelo":"5","oficina":"15A","coordinador":"False","img":""},
-	{"nombres":"Rafael","apellidos":"Bonilla","correo":"rabonilla@espol.edu.ec","paralelo":"7, 8","oficina":"15A","coordinador":"False","img":"https://pbs.twimg.com/profile_images/689133838367387648/Ob8dxtXH.jpg"},
-	{"nombres":"Wendy","apellidos":"Yanez Pazmiño","correo":"wenpayan@espol.edu.ec","paralelo":"9","oficina":"15A","coordinador":"False","img":""},
-	{"nombres":"Segundo","apellidos":"Cruz Ramirez","correo":"escruz@espol.edu.ec","paralelo":"10","oficina":"24A-211","coordinador":"False","img":"https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/eduardocruz2.jpg"},
-	{"nombres":"Antonio","apellidos":"Magallanes Borbor","correo":"jmagalla@espol.edu.ec","paralelo":"11","oficina":"24A","coordinador":"False","img":"https://i.ytimg.com/vi/RKXFp7YwMuM/maxresdefault.jpg"},
-	{"nombres":"Teresa","apellidos":"Tapia Rosero","correo":"atapia@espol.edu.ec","paralelo":"12","oficina":"24A","coordinador":"False","img":"https://i.ytimg.com/vi/eX4d1eU98n0/hqdefault.jpg"}
+	{"nombres":"Jhonny","apellidos":"Pincay","correo":"jpincay@espol.edu.ec","paralelo":"1","aula":"15A","horario":"LU 11H30 - MI 13H30"},
+	{"nombres":"Maria","apellidos":"Falcones","correo":"mfalcone@espol.edu.ec","paralelo":"2, 6","aula":"15A","horario":"MA 12H30 - JU 14H30"},
+	{"nombres":"Karina","apellidos":"Ruiz","correo":"kruiz@espol.edu.ec","paralelo":"3","aula":"15A","horario":"MA 12H30 - MI 12H30"},
+	{"nombres":"Antonio","apellidos":"Calderon","correo":"ancalder@espol.edu.ec","paralelo":"4","aula":"24A","horario":"JU 11H30 - VI 07H30"},
+	{"nombres":"Luis","apellidos":"Ojeda","correo":"lojeda@espol.edu.ec","paralelo":"5","aula":"15A","horario":"MA 10H30 - VI 12H30"},
+	{"nombres":"Rafael","apellidos":"Bonilla","correo":"rbonilla@espol.edu.ec","paralelo":"7, 8","aula":"15A","horario":"MA 08H30 - MI 18H30"},
+	{"nombres":"Wendy","apellidos":"Yanez","correo":"wenpayan@espol.edu.ec","paralelo":"9","aula":"15A","horario":"LU 17H30 - MA 13H30"},
+	{"nombres":"Segundo","apellidos":"Cruz","correo":"escruz@espol.edu.ec","paralelo":"10","aula":"24A-211","horario":"MI 10H30 - JU 11H30"},
+	{"nombres":"Antonio","apellidos":"Magallanes","correo":"jmagalla@espol.edu.ec","paralelo":"11","aula":"24A","horario":"MI 16H30 - JU 16H30"},
+	{"nombres":"Teresa","apellidos":"Tapia","correo":"atapia@espol.edu.ec","paralelo":"12","aula":"24A","horario":"LU 12H30 - MI 10H30"}
 ]
