@@ -7,15 +7,17 @@ function mostrarSemana(parcial, semana) {
 		$("#seccionClases").append($("<h2>").text("Clase "+(i+1)));
 		$("#seccionClases").append($("<h3>").text(c.tema));
 		$("#seccionClases").append($("<h4>").text(c.descripcion));
-		
+		if (c.leccion || c.taller || c.deber){
+			$("#seccionClases").append($("<ul>",{"id":"listaObjetivos"}))
+		}
 		if (c.leccion) {
-			$("#seccionClases").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
+			$("#listaObjetivos").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
 		}
 		if (c.taller) {
-			$("#seccionClases").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
+			$("#listaObjetivos").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
 		}
 		if (c.deber){
-			$("#seccionClases").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
+			$("#listaObjetivos").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
 		}
 		if (c.controlLectura) {
 			$("#seccionClases").append($("<div>",{"id":"divLectura"})
@@ -45,15 +47,17 @@ function mostrarClase(parcial, semana, clase) {
 	$("#seccionClases").empty();	
 	$("#seccionClases").append($("<h3>").text(c.tema));
 	$("#seccionClases").append($("<h4>").text(c.descripcion));
-	
+	if (c.leccion || c.taller || c.deber){
+			$("#seccionClases").append($("<ul>",{"id":"listaObjetivos"}))
+		}
 	if (c.leccion) {
-		$("#seccionClases").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
+		$("#listaObjetivos").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
 	}
 	if (c.taller) {
-		$("#seccionClases").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
+		$("#listaObjetivos").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
 	}
 	if (c.deber){
-		$("#seccionClases").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
+		$("#listaObjetivos").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
 	}
 	if (c.controlLectura) {
 		$("#seccionClases").append($("<div>",{"id":"divLectura"})
@@ -100,5 +104,6 @@ $(document).ready(function(){
 				});
 			});
 		});
+		mostrarClase(0,0,0);
 	});
 });
