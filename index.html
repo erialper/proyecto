@@ -39,22 +39,19 @@
 									<ul class="dropdown-menu">
 										<li><a href="curso.html">Información</a></li>
 										<li><a href="#">Planificación</a></li>
-										<li><a href="#">Sandbox</a></li>
+										<li><a href="#" id="sandbox">Sandbox</a></li>
 										<li><a href="proyecto.html">Proyectos</a></li>
 									</ul>
 								</li>
 								<li> <a href="#">Ayudantias</a> </li>
 								<li> <a href="equipo.html">Equipo</a> </li>								
 								<!-- <li> <a href="#" class="login"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a> </li> -->
-
-								<!-- Start of Add New Iteration -->
 								<li>
 								    <a href="#" class="login" data-toggle="modal" data-target="#myModal">
-								        <span class="glyphicon glyphicon-log-in"></span>
-								        Iniciar sesión
+								        <span id="icon" class="glyphicon glyphicon-log-in"></span>
+								        <span id="texto"> Iniciar sesión </span>
 								    </a>
-								</li> <!-- Add New Iteration -->
-
+								</li> 
 							</ul>
 						</div>
 
@@ -66,21 +63,23 @@
 							        <h3><span class="glyphicon glyphicon-lock"></span> Login</h3>
 							    </div>
 							    <div class="modal-body" style="padding:10px 20px;">
-							        <form role="form">
+							        <!-- <form role="form"> -->
 							            <div class="form-group">
-							              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-							              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+							              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuario</label>
+							              <input type="text" class="form-control" id="usrname">
 							            </div>
 							            <div class="form-group">
-							              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-							              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+							              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+							              <input type="password" class="form-control" id="psw">
 							            </div>
-							            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-							        </form>
+							            <button class="btn btn-success">
+							            	<span class="glyphicon glyphicon-off"></span> Ingresar
+							            </button>							            
+							        <!-- </form> -->
 							    </div>
 							</div>
 						</div>
-
+						<!-- Fin Modal -->
 					</div>
 				</nav>
 			</header>
@@ -186,6 +185,7 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<script src="js/script.js"></script>
 
 	</body>
 
