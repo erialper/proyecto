@@ -1,5 +1,5 @@
-var ayuda = this.location.search;
-var id = ayuda.split("");
+
+var id = localStorage.getItem("id");
 
 function colocar(ar){
 	$("#cuer").empty();
@@ -11,6 +11,7 @@ function colocar(ar){
 	$("#cuer").append($("<h4>").text("Salidas:"));
 	$("#cuer").append($("<p>").text(ar.salida));
 	$("#cuer").append($("<h4>").text("Solución:"));
+	
 	$("#cuer").append($("<button>",{"type":"button","class":"btn btn-info","data-toggle":"modal","data-target":"#mymodal","style":"margin-right: 2%;"}).text("Enviar"));
 	$("#cuer").append($("<a>",{"href":"sb_estd.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Cerrar")));
 }
@@ -18,7 +19,7 @@ function colocar(ar){
 $(document).ready(function(){
 	url = "json/ejercicios.json";
 	$.getJSON(url,function(resp){
-		arch = resp[id[1]-1];
+		arch = resp[id-1];
 		colocar(arch);
 		if(arch.difi=="Principiante"){
 		$("#lis").empty();
