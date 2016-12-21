@@ -20,3 +20,12 @@ $(document).ready(function(){
 		});
 	});
 });
+
+
+
+      $ ( ".form_datetime" ). datetimepicker ({
+        Formato: "aaaa dd MM - hh: ii" , 
+        autoclose: verdad , 
+        todayBtn: verdad , 
+        pickerPosition : "de abajo a la izquierda" 
+    });

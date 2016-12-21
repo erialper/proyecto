@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="es">
@@ -7,9 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Fundamentos de Programación </title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/proyecto.css">
-		<script src="js/proyectos.js"></script>
-
+		<link rel="stylesheet" href="css/course.css">
 	</head>
 
 	<body>
@@ -32,7 +31,7 @@
 								<li class="dropdown active"> 
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Curso<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Información</a></li>
+										<li><a href="course.html">Información</a></li>
 										<li><a href="#">Planificación</a></li>
 										<li><a href="sandbox_estudiante.html">Sandbox</a></li>
 										<li><a href="proyecto.html">Proyectos</a></li>
@@ -52,14 +51,17 @@
 			<!--Parte de un menu de listas-->
 <div class="container">
 <hr>
-  <legend style="cursor:not-allowed">Visualizar Proyectos - Editar Proyecto</legend>
+  <legend style="cursor:not-allowed">Información</legend>
 	<div class="row"><br><br>
-		<div class="col-sm-4">
+		<div class="col-md-3">
 		  	 <div class="list-group">
-			   	<a href="visualizarProyecto.html" class="list-group-item">Visualizar Proyecto</a>
+			   	<a href="#descripcion" class=" active list-group-item">Descripción</a>
+			    <a href="#requisitos" class="list-group-item">Requisitos</a>
+			    <a href="#syllabus" class="list-group-item">Sylabus</a>
+			    <a href="#politicas" class="list-group-item">Politicas del curso</a>
 			</div>
 		</div>	
-		<div class="col-sm-7 offset-sm-1">
+		<div class="col-md-8 offset-sm-1">
 						<form>
 							  <div class="form-group">
 							    <label for="exampleInputEmail1">Título</label>
@@ -69,15 +71,8 @@
 							    <label for="exampleInputPassword1">Descripción</label>
 							    <textarea class="form-control" rows="3" placeholder="Escribe una breve descripcion"></textarea>
 							  </div>
-							  <div class='input-group date' id='datetimepicker2'>
-							  		
-				                    <input type='text' class="form-control" />
-				                    <span class="input-group-addon">
-				                    <span class="glyphicon glyphicon-calendar"></span>
-				                    </span>
-				              </div><br>
 							  <div class="form-group">
-							    <label for="exampleInputFile">Subir Archivo</label>
+							    <label for="exampleInputFile">File input</label>
 							    <input type="file" id="exampleInputFile">
 							    <p class="help-block">Example block-level help text here.</p>
 							  </div>
@@ -86,7 +81,7 @@
 							      <input type="checkbox"> Check me out
 							    </label>
 							  </div>
-							  <button type="submit" class="btn btn-default">Enviar</button>
+							  <button type="submit" class="btn btn-default">Submit</button>
 						</form>
 		</div>
   </div>
