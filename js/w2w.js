@@ -21,7 +21,7 @@ function mostrarSemana(parcial, semana) {
 		}
 		if (c.controlLectura) {
 			$("#seccionClases").append($("<div>",{"id":"divLectura"})
-				.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura}).text(c.lectura))
+				.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura))
 					.append($("<a>",{"href":"#ocultarLectura", "class":"", "data-toggle":"collapse"}).text("Ocultar")))								
 				.append($("<div>",{"id":"ocultarLectura", "class":"embed-responsive embed-responsive-4by3 collapse"})
 					.append($("<iframe>", {"src":c.linkCap}))))
@@ -61,7 +61,7 @@ function mostrarClase(parcial, semana, clase) {
 	}
 	if (c.controlLectura) {
 		$("#seccionClases").append($("<div>",{"id":"divLectura"})
-			.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura}).text(c.lectura)))
+			.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura)))
 			.append($("<a>",{"href":"#ocultarLectura", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
 			.append($("<div>",{"id":"ocultarLectura", "class":"collapse in"})
 				.append($("<div>",{"class":"embed-responsive embed-responsive-4by3"})
