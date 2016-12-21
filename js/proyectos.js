@@ -15,7 +15,7 @@ $(document).ready(function(){
 				.append($("<div>",{"class":"panel-body"})
 					.append($("<p>").text(p.descripcion))
 					.append($("<p>").text("Fecha de Entrega "+p.fechaEntrega))
-					.append($("<a>",{"href":p.archivo}).text("Archivo adicional")))
+					.append($("<a>",{"href":"#"}).text("Archivo adicional")))
 				.append(footer));
 		});
 	});
