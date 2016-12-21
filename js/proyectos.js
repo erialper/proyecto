@@ -7,7 +7,7 @@ $(document).ready(function(){
 		proy.forEach(function (p) {
 			footer=$("<div>",{"class":"panel-footer"});
 			p.tags.forEach(function (t) {
-				footer.append($("<a>", {"href":"#"}).text(t))
+				footer.append($("<a>", {"href":"#", "class":"etiqueta"}).text(t))
 			});
 			$("#divDondeVanLosPanels").append($("<div>", {"class":"panel panel-default"})
 				.append($("<div>",{"class":"panel-heading"})
