@@ -31,7 +31,7 @@
 								<li class="dropdown active"> 
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Curso<span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="course.html">Información</a></li>
+										<li><a href="#">Información</a></li>
 										<li><a href="#">Planificación</a></li>
 										<li><a href="sandbox_estudiante.html">Sandbox</a></li>
 										<li><a href="proyecto.html">Proyectos</a></li>
@@ -48,46 +48,56 @@
 
 
 
-			<!--Parte de un menu de listas-->
-<div class="container">
-<hr>
-  <legend style="cursor:not-allowed">Información</legend>
-	<div class="row"><br><br>
-		<div class="col-md-3">
-		  	 <div class="list-group">
-			   	<a href="#descripcion" class=" active list-group-item">Descripción</a>
-			    <a href="#requisitos" class="list-group-item">Requisitos</a>
-			    <a href="#syllabus" class="list-group-item">Sylabus</a>
-			    <a href="#politicas" class="list-group-item">Politicas del curso</a>
-			</div>
-		</div>	
-		<div class="col-md-8 offset-sm-1">
-						<form>
-							  <div class="form-group">
-							    <label for="exampleInputEmail1">Título</label>
-							    <input type="text" class="form-control" placeholder="Escribe el Titulo">
-							  </div>
-							  <div class="form-group">
-							    <label for="exampleInputPassword1">Descripción</label>
-							    <textarea class="form-control" rows="3" placeholder="Escribe una breve descripcion"></textarea>
-							  </div>
-							  <div class="form-group">
-							    <label for="exampleInputFile">File input</label>
-							    <input type="file" id="exampleInputFile">
-							    <p class="help-block">Example block-level help text here.</p>
-							  </div>
-							  <div class="checkbox">
-							    <label>
-							      <input type="checkbox"> Check me out
-							    </label>
-							  </div>
-							  <button type="submit" class="btn btn-default">Submit</button>
-						</form>
-		</div>
-  </div>
-</div>			
-			
 
+				<section>
+							<div class="container">	
+								<fieldset>
+  									<div class="row"><br><br>
+  									<legend style="cursor:not-allowed">Información</legend>
+   										 <div class="col-md-12 col-sm-7">
+     										 <div class="tabs-left">
+       											 <ul class="nav nav-tabs">
+											          <li class="active"><a href="#descripcion" data-toggle="tab">Descripción</a></li>
+											          <li class="list-inline"><a href="#requisitos" data-toggle="tab">Requisitos</a></li>
+											          <li class="list-inline"><a href="#syllabus" data-toggle="tab">Sylabus</a></li>
+											          <li class="list-inline"><a href="#politicas" data-toggle="tab">Politicas del curso</a></li>
+        										</ul>
+        									
+        									
+											<!--Esta es la parte del contenido central donde al dar click en cualquiera de la lista debera mostrar lo que se pida por parte del usuario-->
+	        									<div class="tab-content">
+	        										<div class="active tab-pane" id="descripcion"><div id="parrafo"><br><hr><br><p> El curso presenta a los estudiantes estrategias para resolver problemas comunes en diversas profesiones por medio del diseño e implementacion de soluciones basadas en el uso de un lenguaje de programacion. Cubre los principios básicos para que el estudiantes pueda leer y escribir progrmas; haciendo énfasis en el diseño y ánalisis de algoritmos. Ádemas, introduce a los estudiantes en el uso de herramientas de desarrollo y depuración<hr></p></div></div>
+	         								 		<div class="tab-pane" id="requisitos"><div id="parrafo">
+	         								 			<div id="cont"><br></b><br><hr id="req">
+	         								 			<table>
+															  <tr>
+															    <td>PreRequisito</td>
+															    <td>Correquisito</td>
+															  </tr>
+															  <tr>
+															    <td>Herramientas de Colaboración Digital.  </td>
+															    <td>Ninguno</td>
+															  </tr>
+														</table>
+
+														<hr id="req">
+														</div>
+	         								 		</div></div>
+	         								 		<br>
+											        <div class="tab-pane" id="syllabus"><embed id ="syllabus" src="informacionCurso/ProgramaAnalitico.pdf"></div>
+											        <div class="tab-pane" id="politicas"><embed id ="politicas" src="informacionCurso/Politicas.pdf"></div>
+										        </div><!-- /tab-content -->
+									        </div><!-- /tab -->
+      										<!--</div><-->
+   									 	</div>
+  									</div><!-- /row -->
+  								</fieldset>			
+							</div><!-- /container -->
+					
+			</section>
+			
+			
+			
 				<div id="sub-footer">
 					<div class="container2">
 						<div class="row">
@@ -101,7 +111,7 @@
 					</div>
 				</div>
 			</footer>
-		</div>
+		</div><!-- cierre de container-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
