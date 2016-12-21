@@ -11,13 +11,13 @@ $(document).ready(function () {
 		ayud=resp.ayudantias;
 		ayud.forEach(function (item, index) {
 			$("#tableAyudantias tbody").append($("<tr>")
-				.append($("<th>").text(item.dia))
-				.append($("<th>").text(item.horaInicio))
-				.append($("<th>").text(item.horaFin))
-				.append($("<th>").text(item.ayudante))
-				.append($("<th>").text(item.aula))
-				.append($("<th>").text(item.edificio))
-				.append($("<th>").append($("<button>",{"type":"button", "class":"btn btn-primary", "data-toggle":"modal", "data-target":"#myModal"})
+				.append($("<td>").text(item.dia))
+				.append($("<td>").text(item.horaInicio))
+				.append($("<td>").text(item.horaFin))
+				.append($("<td>").text(item.ayudante))
+				.append($("<td>").text(item.aula))
+				.append($("<td>").text(item.edificio))
+				.append($("<td>").append($("<button>",{"type":"button", "class":"btn btn-primary", "data-toggle":"modal", "data-target":"#myModal"})
 					.text("Mapa")
 					.click(function () {
 						showMap(item.mapa);
