@@ -11,9 +11,9 @@ function colocar(ar){
 	$("#cuer").append($("<h4>").text("Salidas:"));
 	$("#cuer").append($("<p>").text(ar.salida));
 	$("#cuer").append($("<h4>").text("Solución:"));
-	$("#cuer").append($("<form>",{"class":"form-group"})
+	$("#cuer").append($("<form>",{"class":"form-group	"})
 		.append($("<input>",{"id":"arhivo","type":"file"}).text("Arhivo")));
-	$("#cuer").append($("<button>",{"type":"button","class":"btn btn-info","data-toggle":"modal","data-target":"#mymodal","style":"margin-right: 2%;"}).text("Enviar"));
+	$("#cuer").append($("<button>",{"type":"button","class":"btn btn-info","data-toggle":"modal","data-target":"#myModal","style":"margin-right: 2%;"}).text("Enviar"));
 	$("#cuer").append($("<a>",{"href":"sb_estd.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Cerrar")));
 }
 
