@@ -1,12 +1,12 @@
 
 $(document).ready(function(){
     $("#myBtn").click(function(){
-        $("#myModal").modal();
+        $("#myModalLogin").modal();
     });
 });
 
 
-$("#myModal .modal-body button").click(
+$("#myModalLogin .modal-body button").click(
 	function(){
 		inicio();
 		// $("input").val("");
@@ -25,14 +25,14 @@ function inicio(){
 		$("#texto").text("Profesor");
 		$("#sandbox").attr('href','sandbox_prof.html');
 		limpiarCampos();
-		$("#myModal").modal('toggle');
+		$("#myModalLogin").modal('toggle');
 	} 
 	else if ( $("#usrname").val() === "estudiante" && $("#psw").val() === "estudiante") {
 		$("#icon").attr('class','glyphicon glyphicon-user');		
 		$("#texto").text("Estudiante");
 		$("#sandbox").attr('href','sb_estd.html');		
 		limpiarCampos();
-		$("#myModal").modal('toggle');
+		$("#myModalLogin").modal('toggle');
 	} 
 	else {
 		console.log("login incorrecto");
