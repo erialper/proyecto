@@ -1,6 +1,6 @@
 function cargar(){
 	$(".col-sm-9 hr").empty()
-	var url = "json\\profesores.json"
+	var url = "json/profesores.json"
 	$.getJSON(url,function(resul){
 		resul.forEach(function(item){
 			if(item.coordinador=="True"){

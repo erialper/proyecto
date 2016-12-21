@@ -1,6 +1,6 @@
 function cargar(){
 	$(".table tbody").empty()
-	var url = "json\\aydtarea.json"
+	var url = "json/aydtarea.json"
 	var i = 0
 	$.getJSON(url,function(resul){
 		resul.forEach(function(item){
