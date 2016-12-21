@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+﻿//var ayuda = this.location.search;
+var id = localStorage.getItem("id");
+=======
 var ayuda = this.location.search;
 var id = ayuda.split("");
+>>>>>>> origin/master
 
 function colocar(ar){
 	$("#cuer").empty();
@@ -16,9 +21,16 @@ function colocar(ar){
 }
 
 $(document).ready(function(){
+<<<<<<< HEAD
+	console.log(id)
+	url = "json/ejercicios.json";
+	$.getJSON(url,function(resp){
+		arch = resp[id-1];
+=======
 	url = "json/ejercicios.json";
 	$.getJSON(url,function(resp){
 		arch = resp[id[1]-1];
+>>>>>>> origin/master
 		colocar(arch);
 		if(arch.difi=="Principiante"){
 		$("#lis").empty();
