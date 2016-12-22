@@ -40,31 +40,37 @@ function cargarA(){
 }
 
 function agregarP(item){
-	
 	$('#cuer').append(
-	    $('<div>').attr('class','panel panel-info').append(
-	        $('<div>').attr('class','panel-heading').append(
-	        	$('<h4>').attr('class','panel-title').append(
-	        		$('<a>').attr({
-	        			'data-toggle':'collapse',
-	        			'data-parent':'#panelColl',
-	        			'href':'#collapse' + item.id
-	        		}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
-	        	)
-				.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")))
-	        ),
-	        $('<div>').attr({
-	        			'class':'panel-collapse collapse',
-	        			'id':'collapse' + item.id
-	        			}).append( 
-	        				$('<div>').attr('class','panel-body').append(
-	        					"<strong>Autor: </strong>" + item.autor + "<br>" +
-	        					"<strong>Descripcion: </strong>" + item.descri + "<br>" +
-	        					"<strong>Etiquetas: </strong>"
-	        				)
-	        			)
-	    )
+		$('<div>').attr({"class":"panel-group","id":"accordion"}).append(
+			$('<div>').attr({'class':'panel panel-info',"style":"margin-bottom: 5px;"}).append(
+				$('<div>').attr('class','panel-heading').append(
+					$('<h4>').attr('class','panel-title').append(
+						$('<a>').attr({
+							'data-toggle':'collapse',
+							'data-parent':'#accordion',
+							'href':'#collapse' + item.id
+						}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
+					)
+					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")))
+				),
+				$('<div>').attr({
+							'class':'panel-collapse collapse',
+							'id':'collapse' + item.id
+							}).append( 
+								$('<div>').attr({"class":"panel-body","id":item.id}).append(
+									"Autor: " + item.autor + "<br>" +
+									"Descripcion: " + item.descri + "<br>" +
+									"<strong>Resuelto por: " + item.nEstd +"</strong><br><br>"
+								)
+							)
+			)
+		)
 	)
+	
+	item.etiquetas.split(",").forEach(function(o){
+		$("#"+item.id).append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
+	})
+	
 	
 
 	/*
@@ -83,6 +89,35 @@ function agregarP(item){
 }
 
 function agregarI(item){
+	$('#cuer').append(
+	    $('<div>').attr({'class':'panel panel-warning',"style":"margin-bottom: 5px;"}).append(
+	        $('<div>').attr('class','panel-heading').append(
+	        	$('<h4>').attr('class','panel-title').append(
+	        		$('<a>').attr({
+	        			'data-toggle':'collapse',
+	        			'data-parent':'#panelColl',
+	        			'href':'#collapse' + item.id
+	        		}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
+	        	)
+				.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning"}).text("Tomar")))
+	        ),
+	        $('<div>').attr({
+	        			'class':'panel-collapse collapse',
+	        			'id':'collapse' + item.id
+	        			}).append( 
+	        				$('<div>').attr({"class":"panel-body","id":item.id}).append(
+	        					"Autor: " + item.autor + "<br>" +
+	        					"Descripcion: " + item.descri + "<br>" +
+	        					"<strong>Resuelto por: " + item.nEstd +"</strong><br><br>"
+	        				)
+	        			)
+	    )
+	)
+	
+	item.etiquetas.split(",").forEach(function(o){
+		$("#"+item.id).append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
+	})
+	/*
 	$("#cuer").append($("<div>",{"class":"panel panel-warning","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
 	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
 	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning"}).text("Tomar")));
@@ -91,12 +126,41 @@ function agregarI(item){
 	$("#panc").append($("<p>",{"style":"font-weight: bold;"}).text("Resuelto por: "+item.nEstd));
 	item.etiquetas.split(",").forEach(function(o){
 		$("#panc").append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
-	});
+	});*/
 	var i = item.id;
 	localStorage.setItem("id",i);
 }
 
 function agregarA(item){
+	$('#cuer').append(
+	    $('<div>').attr({'class':'panel panel-danger',"style":"margin-bottom: 5px;"}).append(
+	        $('<div>').attr('class','panel-heading').append(
+	        	$('<h4>').attr('class','panel-title').append(
+	        		$('<a>').attr({
+	        			'data-toggle':'collapse',
+	        			'data-parent':'#panelColl',
+	        			'href':'#collapse' + item.id
+	        		}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
+	        	)
+				.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Tomar")))
+	        ),
+	        $('<div>').attr({
+	        			'class':'panel-collapse collapse',
+	        			'id':'collapse' + item.id
+	        			}).append( 
+	        				$('<div>').attr({"class":"panel-body","id":item.id}).append(
+	        					"Autor: " + item.autor + "<br>" +
+	        					"Descripcion: " + item.descri + "<br>" +
+	        					"<strong>Resuelto por: " + item.nEstd +"</strong><br><br>"
+	        				)
+	        			)
+	    )
+	)
+	
+	item.etiquetas.split(",").forEach(function(o){
+		$("#"+item.id).append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
+	})
+	/*
 	$("#cuer").append($("<div>",{"class":"panel panel-danger","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
 	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
 	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Tomar")));
@@ -105,7 +169,7 @@ function agregarA(item){
 	$("#panc").append($("<p>",{"style":"font-weight: bold;"}).text("Resuelto por: "+item.nEstd));
 	item.etiquetas.split(",").forEach(function(o){
 		$("#panc").append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
-	});
+	});*/
 	var i = item.id;
 	localStorage.setItem("id",i);
 }
