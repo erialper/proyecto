@@ -27,6 +27,10 @@ function inicio(){
 		setLocalStorage();
 		limpiarCampos();
 		$("#myModalLogin").modal('toggle');
+		$("#perfil").append(
+            $('<a>').attr('href','perfil.html').text("Perfil")
+        );
+        $(".login").attr('data-target','');
 	} 
 	else if ( $("#usrname").val() === "estudiante" && $("#psw").val() === "estudiante") {
 		$("#icon").attr('class','glyphicon glyphicon-user');		
@@ -35,6 +39,10 @@ function inicio(){
 		setLocalStorage();
 		limpiarCampos();
 		$("#myModalLogin").modal('toggle');		
+		$("#perfil").append(
+            $('<a>').attr('href','perfil.html').text("Perfil")
+        );
+        $(".login").attr('data-target','');
 	} 
 	else {
 		console.log("login incorrecto");
