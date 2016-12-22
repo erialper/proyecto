@@ -10,7 +10,6 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/perfil.css">
-		<link rel="stylesheet" href="css/login.css">
 	</head>
 
 	<body>
@@ -42,7 +41,7 @@
 										<li><a href="curso.html">Información</a></li>
 										<li><a href="week2week.html">Planificación</a></li>
 										<li><a href="#" id="sandbox">Sandbox</a></li>
-										<li><a href="proyecto.html" id="proyecto">Proyectos</a></li>
+										<li><a href="proyecto.html">Proyectos</a></li>
 									</ul>
 								</li>
 								<li> <a href="ayudantias.html">Ayudantias</a> </li>
@@ -56,32 +55,7 @@
 								</li> 
 							</ul>
 						</div>
-						<!-- Modal -->
-						<div id="myModalLogin" class="modal fade" role="dialog">
-							<div class="modal-content">
-							    <div class="modal-header" style="padding:5px 15px;">
-							        <button type="button" class="close" data-dismiss="modal">&times;</button>
-							        <h3><span class="glyphicon glyphicon-lock"></span> Login</h3>
-							    </div>
-							    <div class="modal-body" style="padding:10px 20px;">
-							        <!-- <form role="form"> -->
-							        	<p id="errorMsj"></p>
-							            <div class="form-group">
-							              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuario</label>
-							              <input type="text" class="form-control" id="usrname">
-							            </div>
-							            <div class="form-group">
-							              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
-							              <input type="password" class="form-control" id="psw">
-							            </div>
-							            <button class="btn btn-success">
-							            	<span class="glyphicon glyphicon-off"></span> Ingresar
-							            </button>
-							        <!-- </form> -->
-							    </div>
-							</div>
-						</div>
-						<!-- Fin Modal -->
+
 					</div>
 				</nav>
 			</header>
@@ -101,10 +75,10 @@
 						    	</div>							    
 						    </div>
 							
-							<div class="col-sm-9">
-								<!-- <h4><small>Coordinador</small></h4>
-								<hr id="linea"> -->
+							<div class="boton">
+								<button type="button" class="btn btn-default btn-sm" id="signout">Cerrar Sesión</button>
 							</div>	
+							<p id="errorMsj"></p>
 
 					    </div>
 					</div>
@@ -130,7 +104,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<script src="js/perfil.js"></script>
-  		<script src="js/script.js"></script>
   		<script src="js/lcStorage.js"></script>
+
 	</body>
 </html>
