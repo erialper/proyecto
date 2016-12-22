@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-    console.log( $("#perfil") );
+    
     if ( localStorage.getItem("LogUser") === "profesor" ) {	
 		$("#icon").attr('class','glyphicon glyphicon-user');
 		$("#texto").text("Profesor");

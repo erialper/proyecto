@@ -48,7 +48,7 @@ function cargar(){
 			if ( localStorage.getItem("LogUser") === "profesor" ) 
 			{	
 				if (item.nombres == "Marco Antonio") {
-					$("#nickUser").append(
+					$("#nickUser").append(						
 						$("<img>").attr({
 							"src":item.img,
 							"class":"img-rounded",
@@ -62,6 +62,15 @@ function cargar(){
 											"sept. 15 de 1989." + "<br>" + 
 											"10 Ejercicio." + "<br>" + 
 											"Nivel: Avanzado.");
+					
+					$("#dataUser").append(
+						$("<br>"),
+						$("<button>").attr({ 
+							"type":"button",
+							"class":"btn btn-default btn-sm",
+							"id":"signout"
+						}).text("Cerrar sesión")
+					);
 				}
 			} 
 			else if ( localStorage.getItem("LogUser") === "estudiante" ) 
@@ -81,12 +90,27 @@ function cargar(){
 											"estudiante@espol.edu.ec" + "<br>" + 
 											"enero 1 de 1995." + "<br>" + 
 											"10 Ejercicio resueltos." + "<br>" + 
-											"Nivel: Medio.");					
+											"Nivel: Medio.");	
+
+					$("#dataUser").append(
+						$("<br>"),
+						$("<button>").attr({ 
+							"type":"button",
+							"class":"btn btn-default btn-sm",
+							"id":"signout"
+						}).text("Cerrar sesión")
+					);				
 				}	
 			}			
 		})
 	})
 }
 
-$(document).ready(cargar)
+$(document).ready(
+	function(){
+		cargar();
+	}
+);
+
+
 
