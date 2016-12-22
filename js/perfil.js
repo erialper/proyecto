@@ -62,7 +62,7 @@ function cargar(){
 											"sept. 15 de 1989." + "<br>" + 
 											"10 Ejercicio." + "<br>" + 
 											"Nivel: Avanzado.");
-					
+					/*
 					$("#dataUser").append(
 						$("<br>"),
 						$("<button>").attr({ 
@@ -71,6 +71,9 @@ function cargar(){
 							"id":"signout"
 						}).text("Cerrar sesión")
 					);
+					*/
+					// console.log( $("#signout") );
+
 				}
 			} 
 			else if ( localStorage.getItem("LogUser") === "estudiante" ) 
@@ -91,7 +94,7 @@ function cargar(){
 											"enero 1 de 1995." + "<br>" + 
 											"10 Ejercicio resueltos." + "<br>" + 
 											"Nivel: Medio.");	
-
+					/*
 					$("#dataUser").append(
 						$("<br>"),
 						$("<button>").attr({ 
@@ -99,18 +102,41 @@ function cargar(){
 							"class":"btn btn-default btn-sm",
 							"id":"signout"
 						}).text("Cerrar sesión")
-					);				
+					);
+					*/			
 				}	
 			}			
 		})
 	})
 }
 
+
+function cerrarSesion(){
+	if ( localStorage.getItem("SignUp") == 1 ) {
+		$("#icon").attr('class','glyphicon glyphicon-log-in');
+		$("#texto").text("Iniciar sesión");
+		$("#sandbox").attr('href','#');
+	    $("#perfil").empty();
+	    $(".login").attr('data-target','#myModalLogin');
+	    localStorage.setItem("SignUp", 0 );
+	    localStorage.setItem("LogUser","");
+	    $("#errorMsj").attr("class","alert alert-success").text("Terminó sesión con exito...!!");
+	} else{
+		$("#errorMsj").attr("class","alert alert-danger").text("Ya se encuentra cerrada la sesion.");
+	}
+}
+
+
+$("#signout").click(
+	function(){
+		cerrarSesion();
+	}
+);
+
 $(document).ready(
 	function(){
 		cargar();
 	}
 );
-
 
 

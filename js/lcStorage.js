@@ -10,6 +10,7 @@ $(document).ready(function(){
             $('<a>').attr('href','perfil.html').text("Perfil")
         );
         $(".login").attr('data-target','');
+        $("#errorMsj").remove();
         
 	} else if ( localStorage.getItem("LogUser") === "estudiante" ) {	
 		$("#icon").attr('class','glyphicon glyphicon-user');
@@ -19,9 +20,11 @@ $(document).ready(function(){
             $('<a>').attr('href','perfil.html').text("Perfil")
         );
         $(".login").attr('data-target','');
+        $("#errorMsj").remove();
 	}
-});
 
+
+});
 
 
 
