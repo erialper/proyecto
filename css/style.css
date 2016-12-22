@@ -32,6 +32,11 @@ hr{
 	font-size: 45px;
 }
 
+#tprof thead th{
+	text-align: center;
+}
+
+
 #barra a.login{
 	border-left: 1px solid gray;
 }
