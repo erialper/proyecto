@@ -1,8 +1,11 @@
 
 
 $(document).ready(function(){
-    
+    $("#sandbox").hide();
+	$("#proyecto").hide()
     if ( localStorage.getItem("LogUser") === "profesor" ) {	
+		$("#sandbox").show();
+		$("#proyecto").show();
 		$("#icon").attr('class','glyphicon glyphicon-user');
 		$("#texto").text("Profesor");
 		$("#sandbox").attr('href','sandbox_prof.html');
@@ -12,7 +15,8 @@ $(document).ready(function(){
         $(".login").attr('data-target','');
         $("#errorMsj").remove();
         
-	} else if ( localStorage.getItem("LogUser") === "estudiante" ) {	
+	} else if ( localStorage.getItem("LogUser") === "estudiante" ) {
+		$("#sandbox").show();		
 		$("#icon").attr('class','glyphicon glyphicon-user');
 		$("#texto").text("Estudiante");
 		$("#sandbox").attr('href','sb_estd.html');
