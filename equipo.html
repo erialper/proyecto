@@ -33,13 +33,18 @@
 									<ul class="dropdown-menu">
 										<li><a href="curso.html">Información</a></li>
 										<li><a href="week2week.html">Planificación</a></li>
-										<li><a href="sb_estd.html">Sandbox</a></li>
+										<li><a href="#" id="sandbox">Sandbox</a></li>
 										<li><a href="proyecto.html">Proyectos</a></li>
 									</ul>
 								</li>
 								<li> <a href="ayudantias.html">Ayudantias</a> </li>
 								<li class="active"> <a href="#">Equipo</a> </li>								
-								<li> <a href="#" class="login"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a> </li>
+								<li>
+								    <a href="#" class="login" data-toggle="modal" data-target="#myModalLogin">
+								        <span id="icon" class="glyphicon glyphicon-log-in"></span>
+								        <span id="texto"> Inicio sesión </span>
+								    </a>
+								</li> 
 							</ul>
 						</div>
 					</div>
@@ -80,5 +85,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<script src="js/equipo.js"></script>
+  		<script src="js/lcStorage.js"></script>
+  		
 	</body>
 </html>

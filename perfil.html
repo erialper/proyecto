@@ -9,12 +9,12 @@
 		<title>Perfil</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/perfil.css">
 	</head>
 
 	<body>
 	
 		<div class="container">
-			<br>
 			<header>
 				<nav id="barra" class="navbar navbar-default">
 					<div class="container-fluid">
@@ -40,7 +40,7 @@
 									<ul class="dropdown-menu">
 										<li><a href="curso.html">Información</a></li>
 										<li><a href="week2week.html">Planificación</a></li>
-										<li><a href="std_estd">Sandbox</a></li>
+										<li><a href="#" id="sandbox">Sandbox</a></li>
 										<li><a href="proyecto.html">Proyectos</a></li>
 									</ul>
 								</li>
@@ -49,7 +49,7 @@
 								<li>
 								    <a href="#" class="login" data-toggle="modal" data-target="#myModal">
 								        <span id="icon" class="glyphicon glyphicon-user"></span>
-								        <span id="texto">Profesor</span>
+								        <span id="texto"> Inicio sesión </span>
 								    </a>
 								</li> 
 							</ul>
@@ -59,21 +59,31 @@
 				</nav>
 			</header>
 
-			<section>
-				<ul class="nav nav-tabs">
-				    <li class="active"><a data-toggle="tab" href="#seccion1">Perfil</a></li>
-				</ul>
+			<section class="container-fluid">
+				<div class="row">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#seccion1">Perfil</a></li>
+					</ul>
 
-				<div class="tab-content">
-				    
-				    <div id="seccion1" class="tab-pane fade in active">
-				    	<div id="datos">
-					    	
+					<div class="tab-content">					    
+					    <div id="seccion1" class="tab-pane fade in active">					    	
+				    		<div class="panel-group">
+					    		<div class="panel panel-info">
+						    		<div class="panel-heading" id="nickUser"></div>
+						      		<div class="panel-body" id="dataUser"></div>
+						    	</div>							    
+						    </div>
+							
+							<div class="col-sm-9">
+								<!-- <h4><small>Coordinador</small></h4>
+								<hr id="linea"> -->
+							</div>	
+
 					    </div>
-				    </div>
+					</div>
 				</div>
-
 			</section>
+
 			<footer>
 				<div id="sub-footer">
 					<div class="container2">
@@ -92,6 +102,8 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<script src="js/perfil.js"></script>
+  		<script src="js/lcStorage.js"></script>
 
 	</body>
 </html>

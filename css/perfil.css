@@ -1,4 +1,10 @@
 
-#seccion1 {
-	margin-left: 2%;
+
+.row .tab-pane {
+	margin-top: 2%;
 }
+
+.panel-group {
+	width: 50%;
+}
+

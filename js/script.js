@@ -9,7 +9,6 @@ $(document).ready(function(){
 $("#myModalLogin button").click(
 	function(){
 		inicio();
-		// $("input").val("");
 	}
 );
 
@@ -18,12 +17,14 @@ function inicio(){
 	
 	if ( $("#usrname").val() === "" || $("#psw").val() === "") {
 		console.log("campos vacios");
+		$("#errorMsj").text("No se han ingresado datos.");
 		return;		
 	} 
 	else if ( $("#usrname").val() === "profesor" && $("#psw").val() === "profesor") {	
 		$("#icon").attr('class','glyphicon glyphicon-user');
 		$("#texto").text("Profesor");
 		$("#sandbox").attr('href','sandbox_prof.html');
+		setLocalStorage();
 		limpiarCampos();
 		$("#myModalLogin").modal('toggle');
 	} 
@@ -31,13 +32,38 @@ function inicio(){
 		$("#icon").attr('class','glyphicon glyphicon-user');		
 		$("#texto").text("Estudiante");
 		$("#sandbox").attr('href','sb_estd.html');		
+		setLocalStorage();
 		limpiarCampos();
-		$("#myModalLogin").modal('toggle');
+		$("#myModalLogin").modal('toggle');		
 	} 
 	else {
 		console.log("login incorrecto");
 		limpiarCampos();
+		$("#errorMsj").text("Datos incorrectos!!  Vuelva a intentarlo.");
 	}	
+
+}
+
+function limpiarCampos(){
+	$("#usrname").val("");
+	$("#psw").val("");
+}
+
+function setLocalStorage(){	      
+    // Captura de datos escrito en los inputs        
+    console.log( $("#usrname").val() );
+    console.log( $("#psw").val() );
+    // Guardando los datos en el LocalStorage
+    localStorage.setItem("LogUser", $("#usrname").val() );
+    localStorage.setItem("LogPass", $("#psw").val() );
+    // Limpiando los campos o inputs
+    /*
+    $("#usrname").text("");
+    $("#psw").text("");	
+    */
+}
+
+
 
 	/*
 	$('#lista_Gener ul').append(
@@ -65,9 +91,3 @@ function inicio(){
 	/*
 	console.log("Se agrego elemento");
 	*/
-}
-
-function limpiarCampos(){
-	$("#usrname").val("");
-	$("#psw").val("");
-}
