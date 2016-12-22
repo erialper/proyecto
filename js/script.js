@@ -1,10 +1,10 @@
-
+/*
 $(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModalLogin").modal();
-    });
+    // $("#myBtn").click(function(){
+    //     $("#myModalLogin").modal();
+    // });
 });
-
+*/
 
 $("#myModalLogin button").click(
 	function(){
@@ -17,7 +17,7 @@ function inicio(){
 	
 	if ( $("#usrname").val() === "" || $("#psw").val() === "") {
 		console.log("campos vacios");
-		$("#errorMsj").text("No se han ingresado datos.");
+		$("#errorMsj").attr("class","alert alert-danger").text("No se han ingresado datos.");
 		return;		
 	} 
 	else if ( $("#usrname").val() === "profesor" && $("#psw").val() === "profesor") {	
@@ -39,7 +39,7 @@ function inicio(){
 	else {
 		console.log("login incorrecto");
 		limpiarCampos();
-		$("#errorMsj").text("Datos incorrectos!!  Vuelva a intentarlo.");
+		$("#errorMsj").attr("class","alert alert-danger").text("Datos incorrectos!!  Vuelva a intentarlo.");
 	}	
 
 }

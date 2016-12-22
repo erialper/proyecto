@@ -47,7 +47,7 @@
 								<li> <a href="ayudantias.html">Ayudantias</a> </li>
 								<li> <a href="equipo.html">Equipo</a> </li>								
 								<li>
-								    <a href="#" class="login" data-toggle="modal" data-target="#myModal">
+								    <a href="#" class="login" data-toggle="modal" data-target="#myModalLogin">
 								        <span id="icon" class="glyphicon glyphicon-user"></span>
 								        <span id="texto"></span>
 								    </a>
@@ -68,8 +68,8 @@
 					<div class="tab-content">
 					    
 					    <div id="seccion1" class="tab-pane fade in active">
-					    	<div id="lista_Gener">
-						    	<ul class=" list-group col-xs-7 col-md-8">
+					    	<!-- <div id="lista_Gener"> -->
+						    	<!-- <ul class=" list-group col-xs-7 col-md-8">
 						    		<li class="list-group-item list-group-item-info ">
 								    	Ejercicio1						    	
 								    </li>
@@ -82,75 +82,119 @@
 								    <li class="list-group-item list-group-item-info">
 								    	Ejercicio4
 								    </li>
-						    	</ul>
-						    </div>
+						    	</ul> -->
+	
+								<div class="panel-group col-xs-7 col-md-8" id="panelColl">
+								    
+								    <div class="panel panel-info">
+								      <div class="panel-heading">
+								        <h4 class="panel-title">
+								          <a data-toggle="collapse" data-parent="#panelColl" href="#collapse1">Ejercicio 1</a>
+								        </h4>
+								      </div>
+								      <div id="collapse1" class="panel-collapse collapse ">
+								        <div class="panel-body">Ingresar datos en Mis Ejercicios</div>
+								      </div>
+								    </div>
+
+								    <div class="panel panel-info">
+								      <div class="panel-heading">
+								        <h4 class="panel-title">
+								          <a data-toggle="collapse" data-parent="#panelColl" href="#collapse2">Ejercicio 2</a>
+								        </h4>
+								      </div>
+								      <div id="collapse2" class="panel-collapse collapse ">
+								        <div class="panel-body">Ingresar datos en Mis Ejercicios</div>
+								      </div>
+								    </div>
+
+								    <div class="panel panel-info">
+								      <div class="panel-heading">
+								        <h4 class="panel-title">
+								          <a data-toggle="collapse" data-parent="#panelColl" href="#collapse3">Ejercicio 3</a>
+								        </h4>
+								      </div>
+								      <div id="collapse3" class="panel-collapse collapse">
+								        <div class="panel-body">Ingresar datos en Mis Ejercicios</div>
+								      </div>
+								    </div>
+
+								</div>
+						    <!-- </div> -->
 					    </div>
 
 					    <div id="seccion2" class="tab-pane fade">
-					        
+					    	<br>
+					        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalEjerc">Nuevo</button>
+					        <br>
 							<div id="lista_Prof">
 								<div class="row">
 							        <ul class="list-group col-xs-7 col-md-8">
 									    <li class="list-group-item list-group-item-info">
 									    	<a href="#"> <span class="label label-warning">Edit</span> </a>
 											<a href="#"> <span class="label label-danger">Delete</span> </a>
-									    	Ejercicio2
+									    	Ejercicio 1
 									    </li>
 									    <li class="list-group-item list-group-item-info">							    	 
 									    	<a href="#"> <span class="label label-warning">Edit</span> </a>
 											<a href="#"> <span class="label label-danger">Delete</span> </a>
-											Ejercicio4
+											Ejercicio 3
 									    </li>						    
 								  	</ul>
 								</div>
-							</div>
-					    	
-							<div id="new_ejerc">							
-								<!-- <div class="row"> -->
-							    	<button data-toggle="collapse" data-target="#info_ejerc">Nuevo</button>	
-									<br><br>
-									<div id="info_ejerc" class="collapse col-xs-10 col-md-8">	
-										<!-- <form> -->									
-									    <div class="input-group">
-										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-										    <input id="titulo" type="text" class="form-control input-lg" name="titulo" placeholder="Titulo">
-									    </div>
-									    <br>
-									    <div class="input-group">
-										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-										    <textarea id="descrip" class="form-control input-sm" rows="2" placeholder="Descripción"></textarea>
-									    </div>
-									    <br>
-									    <div class="input-group">
-										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-										    <input id="autor" type="text" class="form-control input-sm" name="autor" placeholder="Autor">
-									    </div>
-									    <br>  
-									    <div class="input-group">
-										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-										    <input id="etiq" type="text" class="form-control input-sm" name="etiq" placeholder="Etiquetas">
-									    </div>	
-									    <br>  
-									    <div class="input-group">
-										    <label for="nivel">Dificultad.</label>
-											<select class="form-control" id="nivel">
-												<option>Principiante.</option>
-											    <option>Medio.</option>
-											    <option>Avanzado.</option>
-											</select>
-									    </div>
-									    <br>
-									    <div class="form-group">
-									    	<button class="btn">Agregar</button>
-									    </div>
-										<!-- </form> -->
-									</div>
-								<!-- </div> -->
 							</div>
 					    </div>
 					</div>
 				</div>
 			</section>	
+
+			<!-- Modal -->
+			<div class="modal fade" id="modalEjerc" role="dialog">
+    			<div class="modal-dialog">
+					<div class="modal-content">
+					    <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h3><span class="glyphicon glyphicon-list-alt"></span> Nuevo Ejercicio </h3>
+					    </div>
+					    <div class="modal-body">
+					        <div class="input-group">
+							    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+							    <input id="titulo" type="text" class="form-control input-lg" name="titulo" placeholder="Titulo">
+						    </div>
+						    <br>
+						    <div class="input-group">
+							    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+							    <textarea id="descrip" class="form-control input-sm" rows="2" placeholder="Descripción"></textarea>
+						    </div>
+						    <br>
+						    <div class="input-group">
+							    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+							    <input id="autor" type="text" class="form-control input-sm" name="autor" placeholder="Autor">
+						    </div>
+						    <br>  
+						    <div class="input-group">
+							    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+							    <input id="etiq" type="text" class="form-control input-sm" name="etiq" placeholder="Etiquetas">
+						    </div>	
+						    <br>  
+						    <div class="input-group">
+							    <label for="nivel">Dificultad.</label>
+								<select class="form-control" id="nivel">
+									<option>Principiante.</option>
+								    <option>Medio.</option>
+								    <option>Avanzado.</option>
+								</select>
+						    </div>
+						    <br>
+						    <p id="errorMsj"></p>
+						    <div class="form-group">
+						    	<button class="btn">Agregar</button>
+						    </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Modal -->
 
 			<footer>
 				<div id="sub-footer">

@@ -41,25 +41,49 @@ $("#info_ejerc button").click(
 
 function cargar(){
 	var url = "json/profesores.json"
+	var cont = 0;
 	$.getJSON(url,function(resul){
 		resul.forEach(function(item){
-			
-			if (item.nombres == "Marco Antonio") {
-				$("#nickUser").append(
-					$("<img>").attr({
-						"src":item.img,
-						"class":"img-rounded",
-						"style":"width:15% ; margin-right:2%"
-					}),
-					$("<strong>").text("Profesor")
-				);
 
-				$("#dataUser").append( item.nombres + " " + item.apellidos + "<br>" + 
-										item.correo + "<br>" + 
-										"sept. 15 de 1989." + "<br>" + 
-										"10 Ejercicio." + "<br>" + 
-										"Nivel: Avanzado.");
-			}
+			if ( localStorage.getItem("LogUser") === "profesor" ) 
+			{	
+				if (item.nombres == "Marco Antonio") {
+					$("#nickUser").append(
+						$("<img>").attr({
+							"src":item.img,
+							"class":"img-rounded",
+							"style":"width:15% ; margin-right:2%"
+						}),
+						$("<strong>").text("Profesor")
+					);
+
+					$("#dataUser").append( item.nombres + " " + item.apellidos + "<br>" + 
+											item.correo + "<br>" + 
+											"sept. 15 de 1989." + "<br>" + 
+											"10 Ejercicio." + "<br>" + 
+											"Nivel: Avanzado.");
+				}
+			} 
+			else if ( localStorage.getItem("LogUser") === "estudiante" ) 
+			{
+				cont++;
+				if (cont == 1) {
+					$("#nickUser").append(
+							$("<img>").attr({
+								"src":"images/profile.png",
+								"class":"img-rounded",
+								"style":"width:15% ; margin-right:2%"
+							}),
+							$("<strong>").text("Estudiante")
+						);
+
+					$("#dataUser").append( "Nombre Estudiante" + "<br>" + 
+											"estudiante@espol.edu.ec" + "<br>" + 
+											"enero 1 de 1995." + "<br>" + 
+											"10 Ejercicio resueltos." + "<br>" + 
+											"Nivel: Medio.");					
+				}	
+			}			
 		})
 	})
 }

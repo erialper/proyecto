@@ -1,4 +1,4 @@
-var proy;
+/*var proy;
 
 $(document).ready(function(){
 	u="json/proyecto.json"
@@ -20,5 +20,9 @@ $(document).ready(function(){
 		});
 	});
 });
+*/
+            $(function () {
+                $('#datetimepicker2').datetimepicker();
+            });
 
 
