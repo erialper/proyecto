@@ -14,7 +14,14 @@ $(document).ready(function(){
 			});
 			$("#divDondeVanLosPanels").append($("<div>", {"class":"panel panel-default"})
 				.append($("<div>",{"class":"panel-heading"})
-					.append($("<h3>").text("titulo: "+p.titulo)))
+					.append($("<h3>").text("titulo: "+p.titulo))
+					.append($("<a>",{"class": "btn btn-default"})
+						.text("Editar"))
+					.append($("<a>",{"class": "btn btn-default"})
+						.text("Borrar")
+						.click(function(){
+							alert("Desea Borrar")
+						})))
 				.append($("<div>",{"class":"panel-body"})
 					.append($("<p>").text(p.descripcion))
 					.append($("<p>").text("Fecha de Entrega "+p.fechaEntrega))
@@ -23,6 +30,8 @@ $(document).ready(function(){
 		});
 	});
 });
+
+
 
 
 
