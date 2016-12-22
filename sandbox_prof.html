@@ -58,97 +58,97 @@
 				</nav>
 			</header>			
 			
-			<section class="container">
-				<ul class="nav nav-tabs">
-				    <li class="active"><a data-toggle="tab" href="#seccion1">Ejercicios</a></li>
-				    <li><a data-toggle="tab" href="#seccion2">Ajustes</a></li>
-				</ul>
+			<section class="container-fluid">
+				<div class="row">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#seccion1">Ejercicios</a></li>
+					    <li><a data-toggle="tab" href="#seccion2">Ajustes</a></li>
+					</ul>
 
-				<div class="tab-content">
-				    
-				    <div id="seccion1" class="tab-pane fade in active">
-				    	<div id="lista_Gener">
-					    	<ul class=" list-group col-xs-7 col-md-8">
-					    		<li class="list-group-item list-group-item-info ">
-							    	Ejercicio1						    	
-							    </li>
-							    <li class="list-group-item list-group-item-info">
-							    	Ejercicio2
-							    </li>
-							    <li class="list-group-item list-group-item-info">
-							    	Ejercicio3
-							    </li>
-							    <li class="list-group-item list-group-item-info">
-							    	Ejercicio4
-							    </li>
-					    	</ul>
-					    </div>
-				    </div>
-
-				    <div id="seccion2" class="tab-pane fade">
-				        
-						<div id="lista_Prof">
-							<div class="row">
-						        <ul class="list-group col-xs-7 col-md-8">
+					<div class="tab-content">
+					    
+					    <div id="seccion1" class="tab-pane fade in active">
+					    	<div id="lista_Gener">
+						    	<ul class=" list-group col-xs-7 col-md-8">
+						    		<li class="list-group-item list-group-item-info ">
+								    	Ejercicio1						    	
+								    </li>
 								    <li class="list-group-item list-group-item-info">
-								    	<a href="#"> <span class="label label-warning">Edit</span> </a>
-										<a href="#"> <span class="label label-danger">Delete</span> </a>
 								    	Ejercicio2
 								    </li>
-								    <li class="list-group-item list-group-item-info">							    	 
-								    	<a href="#"> <span class="label label-warning">Edit</span> </a>
-										<a href="#"> <span class="label label-danger">Delete</span> </a>
-										Ejercicio4
-								    </li>						    
-							  	</ul>
-							</div>
-						</div>
-				    	
-						<div id="new_ejerc">							
-							<div class="row">
-						    	<button data-toggle="collapse" data-target="#info_ejerc">Nuevo</button>	
-								<br><br>
-								<div id="info_ejerc" class="collapse col-xs-10 col-md-8">	
-									<!-- <form> -->									
-								    <div class="input-group">
-									    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-									    <input id="titulo" type="text" class="form-control input-lg" name="titulo" placeholder="Titulo">
-								    </div>
-								    <br>
-								    <div class="input-group">
-									    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-									    <textarea id="descrip" class="form-control input-sm" rows="2" placeholder="Descripción"></textarea>
-								    </div>
-								    <br>
-								    <div class="input-group">
-									    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-									    <input id="autor" type="text" class="form-control input-sm" name="autor" placeholder="Autor">
-								    </div>
-								    <br>  
-								    <div class="input-group">
-									    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-									    <input id="etiq" type="text" class="form-control input-sm" name="etiq" placeholder="Etiquetas">
-								    </div>	
-								    <br>  
-								    <div class="input-group">
-									    <label for="nivel">Dificultad.</label>
-										<select class="form-control" id="nivel">
-											<option>Principiante.</option>
-										    <option>Medio.</option>
-										    <option>Avanzado.</option>
-										</select>
-								    </div>
-								    <br>
-								    <div class="form-group">
-								    	<div>
-								    		<button class="btn">Agregar</button>
-								    	</div>								    	
-								    </div>
-									<!-- </form> -->
+								    <li class="list-group-item list-group-item-info">
+								    	Ejercicio3
+								    </li>
+								    <li class="list-group-item list-group-item-info">
+								    	Ejercicio4
+								    </li>
+						    	</ul>
+						    </div>
+					    </div>
+
+					    <div id="seccion2" class="tab-pane fade">
+					        
+							<div id="lista_Prof">
+								<div class="row">
+							        <ul class="list-group col-xs-7 col-md-8">
+									    <li class="list-group-item list-group-item-info">
+									    	<a href="#"> <span class="label label-warning">Edit</span> </a>
+											<a href="#"> <span class="label label-danger">Delete</span> </a>
+									    	Ejercicio2
+									    </li>
+									    <li class="list-group-item list-group-item-info">							    	 
+									    	<a href="#"> <span class="label label-warning">Edit</span> </a>
+											<a href="#"> <span class="label label-danger">Delete</span> </a>
+											Ejercicio4
+									    </li>						    
+								  	</ul>
 								</div>
 							</div>
-						</div>
-				    </div>
+					    	
+							<div id="new_ejerc">							
+								<!-- <div class="row"> -->
+							    	<button data-toggle="collapse" data-target="#info_ejerc">Nuevo</button>	
+									<br><br>
+									<div id="info_ejerc" class="collapse col-xs-10 col-md-8">	
+										<!-- <form> -->									
+									    <div class="input-group">
+										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+										    <input id="titulo" type="text" class="form-control input-lg" name="titulo" placeholder="Titulo">
+									    </div>
+									    <br>
+									    <div class="input-group">
+										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+										    <textarea id="descrip" class="form-control input-sm" rows="2" placeholder="Descripción"></textarea>
+									    </div>
+									    <br>
+									    <div class="input-group">
+										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+										    <input id="autor" type="text" class="form-control input-sm" name="autor" placeholder="Autor">
+									    </div>
+									    <br>  
+									    <div class="input-group">
+										    <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+										    <input id="etiq" type="text" class="form-control input-sm" name="etiq" placeholder="Etiquetas">
+									    </div>	
+									    <br>  
+									    <div class="input-group">
+										    <label for="nivel">Dificultad.</label>
+											<select class="form-control" id="nivel">
+												<option>Principiante.</option>
+											    <option>Medio.</option>
+											    <option>Avanzado.</option>
+											</select>
+									    </div>
+									    <br>
+									    <div class="form-group">
+									    	<button class="btn">Agregar</button>
+									    </div>
+										<!-- </form> -->
+									</div>
+								<!-- </div> -->
+							</div>
+					    </div>
+					</div>
 				</div>
 			</section>	
 

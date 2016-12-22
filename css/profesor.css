@@ -7,13 +7,27 @@
 
 /***************************************/
 
-.list-group {
+#seccion1 .list-group {
 	margin-top: 2%;
 }
 
-#seccion2 {
-	margin-left: 2%;
+
+#seccion2 .list-group {
+	margin-top: 2%;
+	margin-left: 1.5%;
 }
+
+
+#secciones {
+	padding-left: 0%;
+}
+
+
+#new_ejerc button {
+	margin-left: 1.5%;
+}
+
+
 /*
 #seccion1 p {
   padding: 10px;

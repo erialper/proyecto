@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 
-$("#myModalLogin .modal-body button").click(
+$("#myModalLogin button").click(
 	function(){
 		inicio();
 		// $("input").val("");
