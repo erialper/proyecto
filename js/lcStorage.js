@@ -26,8 +26,6 @@ $(document).ready(function(){
         $(".login").attr('data-target','');
         $("#errorMsj").remove();
 	}
-
-
 });
 
 

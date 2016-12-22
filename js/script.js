@@ -9,7 +9,6 @@ $(document).ready(function(){
 $("#myModalLogin button").click(
 	function(){
 		inicio();
-		location.refresh()
 	}
 );
 
@@ -49,7 +48,7 @@ function inicio(){
 		limpiarCampos();
 		$("#errorMsj").attr("class","alert alert-danger").text("Datos incorrectos!!  Vuelva a intentarlo.");
 	}	
-
+	location.reload()
 }
 
 function limpiarCampos(){

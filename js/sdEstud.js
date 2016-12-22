@@ -40,6 +40,34 @@ function cargarA(){
 }
 
 function agregarP(item){
+	
+	$('#cuer').append(
+	    $('<div>').attr('class','panel panel-info').append(
+	        $('<div>').attr('class','panel-heading').append(
+	        	$('<h4>').attr('class','panel-title').append(
+	        		$('<a>').attr({
+	        			'data-toggle':'collapse',
+	        			'data-parent':'#panelColl',
+	        			'href':'#collapse' + item.id
+	        		}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
+	        	)
+				.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")))
+	        ),
+	        $('<div>').attr({
+	        			'class':'panel-collapse collapse',
+	        			'id':'collapse' + item.id
+	        			}).append( 
+	        				$('<div>').attr('class','panel-body').append(
+	        					"<strong>Autor: </strong>" + item.autor + "<br>" +
+	        					"<strong>Descripcion: </strong>" + item.descri + "<br>" +
+	        					"<strong>Etiquetas: </strong>"
+	        				)
+	        			)
+	    )
+	)
+	
+
+	/*
 	$("#cuer").append($("<div>",{"class":"panel panel-info","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
 	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
 	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")));
@@ -49,6 +77,7 @@ function agregarP(item){
 	item.etiquetas.split(",").forEach(function(o){
 		$("#panc").append($("<span>",{"class":"bg-primary","style":"padding: 2px 5px 2px 5px;margin-right:1%;"}).text(o));
 	});
+	*/
 	var i = item.id;
 	localStorage.setItem("id",i);
 }
