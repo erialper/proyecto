@@ -9,12 +9,12 @@ $(document).ready(function(){
 $("#myModalLogin button").click(
 	function(){
 		inicio();
+		location.refresh()
 	}
 );
 
 
 function inicio(){
-	
 	if ( $("#usrname").val() === "" || $("#psw").val() === "") {
 		console.log("campos vacios");
 		$("#errorMsj").attr("class","alert alert-danger").text("No se han ingresado datos.");
