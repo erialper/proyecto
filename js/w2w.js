@@ -1,85 +1,56 @@
 var sched;
 
-function mostrarSemana(parcial, semana) {
-	console.log("Parcial: "+parcial, " semana: "+semana);
-	sched.parcial[parcial].semana[semana].clase.forEach(function (c, i) {
-		$("#seccionClases").empty();
-		$("#seccionClases").append($("<h2>").text("Clase "+(i+1)));
-		$("#seccionClases").append($("<h3>").text(c.tema));
-		$("#seccionClases").append($("<h4>").text(c.descripcion));
-		if (c.leccion || c.taller || c.deber){
-			$("#seccionClases").append($("<ul>",{"id":"listaObjetivos"}))
-		}
-		if (c.leccion) {
-			$("#listaObjetivos").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
-		}
-		if (c.taller) {
-			$("#listaObjetivos").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
-		}
-		if (c.deber){
-			$("#listaObjetivos").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
-		}
-		if (c.controlLectura) {
-			$("#seccionClases").append($("<div>",{"id":"divLectura"})
-				.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura))
-					.append($("<a>",{"href":"#ocultarLectura", "class":"", "data-toggle":"collapse"}).text("Ocultar")))								
-				.append($("<div>",{"id":"ocultarLectura", "class":"embed-responsive embed-responsive-4by3 collapse"})
-					.append($("<iframe>", {"src":c.linkCap}))))
-		}
-		if(c.diapositiva){
-			$("#seccionClases").append($("<div>",{"class":"divDiapositiva"})				
-				.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
-					.append($("<iframe>", {"src":c.linkDiapositiva})))
-				)
-		}
-		if(c.video){
-			$("#seccionClases").append($("<div>",{"class":"divVideo"})			
-				.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
-					.append($("<iframe>", {"src":c.linkVideo})))
-				)
-		}
-	});
-}
-
 function mostrarClase(parcial, semana, clase) {
-	console.log("Parcial: "+parcial, " semana: "+semana+" clse: "+clase);
+	console.log("Parcial: "+parcial, " semana: "+semana+" clse: "+clase);	
+	$("#listPanel a").attr("class","list-group-item");
+	$($("#listPanel > a")[parcial]).attr("class","list-group-item active");
+	//$($("#semanas"+(parcial+1)+" > a")[semana]).attr("class","list-group-item active");
+	$($("#p"+(parcial+1)+ "clases"+(semana+1)+" > a")[clase]).attr("class","list-group-item active");
 	c=sched.parcial[parcial].semana[semana].clase[clase];
-	$("#seccionClases").empty();	
+	$("#seccionClases").empty();
 	$("#seccionClases").append($("<h3>").text(c.tema));
 	$("#seccionClases").append($("<h4>").text(c.descripcion));
 	if (c.leccion || c.taller || c.deber){
-			$("#seccionClases").append($("<ul>",{"id":"listaObjetivos"}))
+			$("#seccionClases").append($("<div>", {"class":"panel panel-default"})
+				//.append($("<div>", {"class":"panel-heading"}).text("Actividades de la Clase"))
+				.append($("<ul>",{"id":"listaObjetivos", "class":"list-group panel"})))
 		}
 	if (c.leccion) {
-		$("#listaObjetivos").append($("<p>", {"class":"text-warning"}).text("Se tomará una Lección"));
+		$("#listaObjetivos").append($("<li>", {"class":"list-group-item list-group-item-danger"}).text("Se tomará una Lección"));
 	}
 	if (c.taller) {
-		$("#listaObjetivos").append($("<p>",{"class":"text-info"}).text("Se realizará un taller"));
+		$("#listaObjetivos").append($("<li>",{"class":"list-group-item list-group-item-info"}).text("Se realizará un taller"));
 	}
 	if (c.deber){
-		$("#listaObjetivos").append($("<p>", {"class":"text-info"}).text("Se revisará el deber"));
+		$("#listaObjetivos").append($("<li>", {"class":"list-group-item list-group-item-warning"}).text("Se revisará el deber"));
 	}
+
 	if (c.controlLectura) {
-		$("#seccionClases").append($("<div>",{"id":"divLectura"})
-			.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura)))
-			.append($("<a>",{"href":"#ocultarLectura", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
-			.append($("<div>",{"id":"ocultarLectura", "class":"collapse in"})
-				.append($("<div>",{"class":"embed-responsive embed-responsive-4by3"})
-					.append($("<iframe>", {"src":c.linkCap})))))
+		$("#seccionClases").append($("<div>",{"id":"divLectura", "class": "panel panel-default"})
+			.append($("<div>",{"class":"panel-heading"})			
+				.append($("<a>",{"href":"#ocultarLectura", "class":"", "data-toggle":"collapse"}).text("Material de Lectura")))
+			.append($("<div>",{"class":"panel-body"})
+				.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura)))				
+				.append($("<div>",{"id":"ocultarLectura", "class":"collapse in"})
+					.append($("<div>",{"class":"embed-responsive embed-responsive-4by3"})
+						.append($("<iframe>", {"src":c.linkCap, "type":"application/pdf"}))))))
 	}
 	if(c.diapositiva){
-		$("#seccionClases").append($("<div>",{"class":"divDiapositiva"})
-			.append($("<a>",{"href":"#ocultarDiapositiva", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
-			.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
+		$("#seccionClases").append($("<div>",{"class":"divDiapositiva", "class": "panel panel-default"})
+			.append($("<div>",{"class":"panel-heading"})
+				.append($("<a>",{"href":"#ocultarDiapositiva", "class":"", "data-toggle":"collapse"}).text("Diapositiva de la clase")))
+			.append($("<div>",{"id":"ocultarDiapositiva", "class":"panel-body collapse in"})
 				.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
 					.append($("<iframe>", {"src":c.linkDiapositiva})))))
 	}
 	if(c.video){
-		$("#seccionClases").append($("<div>",{"class":"divVideo"}) 
-			.append($("<a>",{"href":"#ocultarDiapositiva", "class":"btn btn-default", "data-toggle":"collapse"}).text("X"))
-			.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
-				.append($("<div>",{ "class":"embed-responsive embed-responsive-16by9"})
-					.append($("<iframe>", {"src":c.linkVideo})))))
+		$("#seccionClases").append($("<div>",{"id":"divVideo", "class": "panel panel-default"})
+			.append($("<div>",{"class":"panel-heading"})
+				.append($("<a>",{"href":"#ocultarDiapositiva", "class":"", "data-toggle":"collapse"}).text("Video Relacionado")))
+			.append($("<div>",{"class":"panel-body"})
+				.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
+					.append($("<div>",{ "class":"embed-responsive embed-responsive-16by9"})
+						.append($("<iframe>", {"src":c.linkVideo}))))))
 	}
 }
 
@@ -88,7 +59,7 @@ $(document).ready(function(){
 	$.getJSON(url, function(resp){
 		sched=resp.data;
 		resp.data.parcial.forEach(function(par, i){
-			$("#listPanel").append($("<a>",{"href":"#semanas"+(i+1), "class":"list-group-item list-group-item-success", "data-toggle":"collapse", "data-parent":"#asideSemanas"})
+			$("#listPanel").append($("<a>",{"href":"#semanas"+(i+1), "class":"list-group-item", "data-toggle":"collapse", "data-parent":"#asideSemanas"})
 				.text("Parcial "+ (i+1)))
 			.append($("<div>", {"class":"collapse", "id":"semanas"+(i+1)}));
 			par.semana.forEach(function(sem, index){
@@ -104,6 +75,8 @@ $(document).ready(function(){
 				});
 			});
 		});
+		$("#listPanel a")[0].click()
+		$("#semanas1 a")[0].click()
 		mostrarClase(0,0,0);
 	});
 });

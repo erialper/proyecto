@@ -23,19 +23,8 @@
 	list-style: circle;
 }
 
-#seccionClases a{
-	position: absolute;
-    right: 1em;
-    z-index: 2;
-    margin-bottom: 1em;
-}
-#seccionClases .collapsed{
-	position:relative;
-	float: right;
-	right: 0;
-}
-
 h3 {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+
