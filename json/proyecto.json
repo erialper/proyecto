@@ -13,7 +13,7 @@
     },
     {
       "autor": "Karina Bermeo", 
-      "titulo": "Instituto Geofisico",
+      "titulo": "Instituto Neurociencia",
       "descripcion": "Para este proyecto es necesario utilizar la libreria de numpy para un movimiento de telúricos",
       "fechaEntrega": "03/02/2016",
       "archivo": "archivosproyectos/Avance1.pdf",
@@ -26,7 +26,7 @@
     },
     {
       "autor": "Ruddy Moncayo", 
-      "titulo": "Instituto Geofisico",
+      "titulo": "Tecnica Neuronales",
       "descripcion": "Para este proyecto es necesario utilizar la libreria de numpy para un movimiento de telúricos",
       "fechaEntrega": "03/02/2016",
       "archivo": "archivosproyectos/Avance1.pdf",
