@@ -1,5 +1,5 @@
 
-localStorage.setItem("noEjercicios", 3 );
+var cont = 4;
 
 function agregarProyecto(){
 	
@@ -9,6 +9,8 @@ function agregarProyecto(){
 		return;		
 	}
 
+	cont++;
+	localStorage.setItem("noEjercicios", cont );
 
 	$('#panelColl').append(
 	    $('<div>').attr('class','panel panel-info').append(
@@ -17,13 +19,13 @@ function agregarProyecto(){
 	        		$('<a>').attr({
 	        			'data-toggle':'collapse',
 	        			'data-parent':'#panelColl',
-	        			'href':'#collapse'+localStorage.getItem("noEjercicios")+1
+	        			'href':'#collapse' + cont
 	        		}).text( $("#titulo").val() )
 	        	)
 	        ),
 	        $('<div>').attr({
 	        			'class':'panel-collapse collapse',
-	        			'id':'collapse'+localStorage.getItem("noEjercicios")+1
+	        			'id':'collapse' + cont
 	        			}).append( 
 	        				$('<div>').attr('class','panel-body').append(
 	        					"Autor:" + "<br>" +
@@ -31,7 +33,8 @@ function agregarProyecto(){
 	        					"Descripcion:" + "<br>" +
 	        					$("#descrip").val() + "<br><br>" +
 	        					"Etiquetas:" + "<br>" +
-	        					"<a href=" + "'https://www.google.com.ec/search?q=google&oq=google&aqs=chrome..69i57.3261j0j4&sourceid=chrome&ie=UTF-8#q='" + $("#etiq").val() + "'%20'>" + $("#etiq").val() + "</a>"
+	        					"<a href=" + "'https://www.google.com.ec/search?q=google&oq=google&aqs=chrome.."+
+	        					"69i57.3261j0j4&sourceid=chrome&ie=UTF-8#q="+ $("#etiq").val() + "%20'>" + $("#etiq").val() + "</a>"
 	        				)
 	        			)
 	    )
@@ -40,12 +43,15 @@ function agregarProyecto(){
 
 	
 	$('#lista_Prof ul').append(
-	    $('<li>').attr('class','list-group-item list-group-item-info').append(	        
-	        $("<a>").attr('href','#').append(
-	        	$('<span>').attr('class', 'label label-warning').append("Edit")
-	        ),$("<a>").attr('href','#').append(
-	        	$('<span>').attr('class', 'label label-danger').append("Delete")
-	        ), $("#titulo").val()
+	    $('<li>').attr({
+	    		'class':'list-group-item list-group-item-info',
+	    		'id':'elemt-' + cont
+	    	}).append(	        
+		        $("<a>").attr('href','#').append(
+		        	$('<span>').attr('class', 'label label-warning').append("Edit")
+		        ),$("<a>").attr('href','#').append(
+		        	$('<span>').attr('class', 'label label-danger').append("Delete")
+		        ), $("#titulo").val()
 	    )
 	)
 
