@@ -11,3 +11,9 @@ $(function () {
     // Set another completion function for the request above
 
 });
+
+$(document).ready(function () {
+	$("form").submit(function () {
+		alert("Enviado")
+	})
+})
