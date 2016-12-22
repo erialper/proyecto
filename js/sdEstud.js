@@ -40,8 +40,9 @@ function cargarA(){
 }
 
 function agregarP(item){
-	$("#cuer").append($("<div>",{"class":"panel panel-info","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"}).text(item.titulo)));
-	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text(">")));
+	$("#cuer").append($("<div>",{"class":"panel panel-info","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
+	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
+	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")));
 	$("#pan").append($("<div>",{"class":"panel-body","id":"panc"}).text("Autor: "+ item.autor));
 	$("#panc").append($("<p>").text(item.descri));
 	$("#panc").append($("<p>",{"style":"font-weight: bold;"}).text("Resuelto por: "+item.nEstd));
@@ -53,8 +54,9 @@ function agregarP(item){
 }
 
 function agregarI(item){
-	$("#cuer").append($("<div>",{"class":"panel panel-warning","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"}).text(item.titulo)));
-	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning"}).text(">")));
+	$("#cuer").append($("<div>",{"class":"panel panel-warning","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
+	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
+	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning"}).text("Tomar")));
 	$("#pan").append($("<div>",{"class":"panel-body","id":"panc"}).text("Autor: "+ item.autor));
 	$("#panc").append($("<p>").text(item.descri));
 	$("#panc").append($("<p>",{"style":"font-weight: bold;"}).text("Resuelto por: "+item.nEstd));
@@ -66,8 +68,9 @@ function agregarI(item){
 }
 
 function agregarA(item){
-	$("#cuer").append($("<div>",{"class":"panel panel-danger","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"}).text(item.titulo)));
-	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger"}).text(">")));
+	$("#cuer").append($("<div>",{"class":"panel panel-danger","id":"pan"}).append($("<div>",{"class":"panel-heading","id":"cab"})));
+	$("#cab").append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo);
+	$("#cab").append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Tomar")));
 	$("#pan").append($("<div>",{"class":"panel-body","id":"panc"}).text("Autor: "+ item.autor));
 	$("#panc").append($("<p>").text(item.descri));
 	$("#panc").append($("<p>",{"style":"font-weight: bold;"}).text("Resuelto por: "+item.nEstd));

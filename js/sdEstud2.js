@@ -4,6 +4,7 @@ var id = localStorage.getItem("id");
 function colocar(ar){
 	$("#cuer").empty();
 	$("#cuer").append($("<h1>").text(ar.titulo));
+	$("#cuer").append("<hr id=\"linea\"></hr>");
 	$("#cuer").append($("<h4>").text("Descripción:"));
 	$("#cuer").append($("<p>").text(ar.ejerc));
 	$("#cuer").append($("<h4>").text("Entradas:"));
