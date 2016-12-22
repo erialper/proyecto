@@ -1,8 +1,11 @@
-/*var proy;
+var proy;
+var resp;
 
 $(document).ready(function(){
 	u="json/proyecto.json"
+	console.log("sdasd")
 	$.getJSON(u, function(r){
+		resp=r;
 		proy=r.proyectos;
 		proy.forEach(function (p) {
 			footer=$("<div>",{"class":"panel-footer"});
@@ -20,20 +23,7 @@ $(document).ready(function(){
 		});
 	});
 });
-*/
-$(function () {
-    $('#datetimepicker1').datetimepicker();
 
-    var jqxhr = $.getJSON("json/proyecto.json", function (data) {
-        console.log(data);
-    })
-
-    console.log(jqxhr);
-    // Perform other work here ...
-
-    // Set another completion function for the request above
-
-});
 
 
 

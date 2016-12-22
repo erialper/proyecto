@@ -1,25 +1,40 @@
 {
   "proyectos": [
     {
-      "titulo": "Este es el Titulo de mi Proyecto",
-      "descripcion": "Esta es la Descripcion del proyecto",
+      "autor": "Carlos Monsalve", 
+      "titulo": "Instituto Geofisico",
+      "descripcion": "a.  Elaborar  un  programa  que  permita  ingresar  reportes  (los  textos)  hasta  que  el  usuario  ingrese  la  palabra  clave  Qu1t",
       "fechaEntrega": "02/02/2016",
-      "archivo": "ruta/del/archivo",
+      "archivo": "archivosproyectos/Avance0.pdf",
       "tags": [
-        "etiqueta1",
-        "etiqueta2"
+        "Proyecto parcial",
+        "Python"
       ]
     },
     {
-      "titulo": "Este es otro Titulo de Proyecto",
-      "descripcion": "Esta es otra Descripcion del proyecto",
+      "autor": "Karina Bermeo", 
+      "titulo": "Instituto Geofisico",
+      "descripcion": "Para este proyecto es necesario utilizar la libreria de numpy para un movimiento de telúricos",
       "fechaEntrega": "03/02/2016",
-      "archivo": "ruta/del/archivo",
+      "archivo": "archivosproyectos/Avance1.pdf",
       "tags": [
-        "etiqueta2",
-        "etiqueta3",
-        "etiqueta4",
-        "etiqueta5"
+        "Avance",
+        "Java",
+        "Libreria Num"
+
+      ]
+    },
+    {
+      "autor": "Ruddy Moncayo", 
+      "titulo": "Instituto Geofisico",
+      "descripcion": "Para este proyecto es necesario utilizar la libreria de numpy para un movimiento de telúricos",
+      "fechaEntrega": "03/02/2016",
+      "archivo": "archivosproyectos/Avance1.pdf",
+      "tags": [
+        "Avance",
+        "Java",
+        "Libreria Num"
+
       ]
     }
   ]
