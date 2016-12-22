@@ -26,9 +26,9 @@ function mostrarClase(parcial, semana, clase) {
 	}
 
 	if (c.controlLectura) {
-		$("#seccionClases").append($("<div>",{"id":"divLectura", "class": "panel panel-default"})
-			.append($("<div>",{"class":"panel-heading"})			
-				.append($("<a>",{"href":"#ocultarLectura", "class":"", "data-toggle":"collapse"}).text("Material de Lectura")))
+		$("#seccionClases").append($("<div>",{"id":"divLectura", "class": "panel panel-info"})
+			.append($("<div>",{"class":"panel-heading", "href":"#ocultarLectura", "data-toggle":"collapse"})
+				.text("Material de Lectura"))
 			.append($("<div>",{"class":"panel-body"})
 				.append($("<p>").text("Lectura: ").append($("<a>", {"href":c.linkLectura, "target":"_blank"}).text(c.lectura)))				
 				.append($("<div>",{"id":"ocultarLectura", "class":"collapse in"})
@@ -36,21 +36,20 @@ function mostrarClase(parcial, semana, clase) {
 						.append($("<iframe>", {"src":c.linkCap, "type":"application/pdf"}))))))
 	}
 	if(c.diapositiva){
-		$("#seccionClases").append($("<div>",{"class":"divDiapositiva", "class": "panel panel-default"})
-			.append($("<div>",{"class":"panel-heading"})
-				.append($("<a>",{"href":"#ocultarDiapositiva", "class":"", "data-toggle":"collapse"}).text("Diapositiva de la clase")))
+		$("#seccionClases").append($("<div>",{"class":"divDiapositiva", "class": "panel panel-info"})
+			.append($("<div>",{"class":"panel-heading", "href":"#ocultarDiapositiva", "data-toggle":"collapse"})
+				.text("Diapositiva de la clase"))
 			.append($("<div>",{"id":"ocultarDiapositiva", "class":"panel-body collapse in"})
 				.append($("<div>",{ "class":"embed-responsive embed-responsive-4by3"})
 					.append($("<iframe>", {"src":c.linkDiapositiva})))))
 	}
 	if(c.video){
-		$("#seccionClases").append($("<div>",{"id":"divVideo", "class": "panel panel-default"})
-			.append($("<div>",{"class":"panel-heading"})
-				.append($("<a>",{"href":"#ocultarDiapositiva", "class":"", "data-toggle":"collapse"}).text("Video Relacionado")))
-			.append($("<div>",{"class":"panel-body"})
-				.append($("<div>",{"id":"ocultarDiapositiva", "class":"collapse in"})
-					.append($("<div>",{ "class":"embed-responsive embed-responsive-16by9"})
-						.append($("<iframe>", {"src":c.linkVideo}))))))
+		$("#seccionClases").append($("<div>",{"id":"divVideo", "class": "panel panel-info"})
+			.append($("<div>",{"class":"panel-heading", "href":"#ocultarVideo", "data-toggle":"collapse"})
+				.text("Video Relacionado"))
+			.append($("<div>",{"class":"panel-body", "id":"ocultarVideo", "class":"collapse in"})
+				.append($("<div>",{ "class":"embed-responsive embed-responsive-16by9"})
+					.append($("<iframe>", {"src":c.linkVideo})))))
 	}
 }
 
