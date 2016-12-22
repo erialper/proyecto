@@ -44,14 +44,14 @@ function agregarP(item){
 		$('<div>').attr({"class":"panel-group","id":"accordion","style":"margin-bottom: 5px;"}).append(
 			$('<div>').attr({'class':'panel panel-info'}).append(
 				$('<div>').attr('class','panel-heading').append(
-					$('<h4>').attr('class','panel-title').append(
+					$('<h4>').attr({'class':'panel-title','style':'overflow:auto'}).append(
 						$('<a>').attr({
 							'data-toggle':'collapse',
 							'data-parent':'#accordion',
 							'href':'#collapse' + item.id
-						}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
+						}).append("<span style=\"margin-top:8px;font-weight: bold;\">"+ item.titulo)
 					)
-					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info"}).text("Tomar")))
+					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-info","style":"float:right"}).text("Tomar")))
 				),
 				$('<div>').attr({
 							'class':'panel-collapse collapse',
@@ -80,14 +80,14 @@ function agregarI(item){
 		$('<div>').attr({"class":"panel-group","id":"accordion","style":"margin-bottom: 5px;"}).append(
 			$('<div>').attr({'class':'panel panel-warning'}).append(
 				$('<div>').attr('class','panel-heading').append(
-					$('<h4>').attr('class','panel-title').append(
+					$('<h4>').attr({'class':'panel-title','style':'overflow:auto'}).append(
 						$('<a>').attr({
 							'data-toggle':'collapse',
 							'data-parent':'#accordion',
 							'href':'#collapse' + item.id
 						}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
 					)
-					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning"}).text("Tomar")))
+					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-warning","style":"float:right"}).text("Tomar")))
 				),
 				$('<div>').attr({
 							'class':'panel-collapse collapse',
@@ -116,14 +116,14 @@ function agregarA(item){
 		$('<div>').attr({"class":"panel-group","id":"accordion","style":"margin-bottom: 5px;"}).append(
 			$('<div>').attr({'class':'panel panel-danger'}).append(
 				$('<div>').attr('class','panel-heading').append(
-					$('<h4>').attr('class','panel-title').append(
+					$('<h4>').attr({'class':'panel-title','style':'overflow:auto'}).append(
 						$('<a>').attr({
 							'data-toggle':'collapse',
 							'data-parent':'#accordion',
 							'href':'#collapse' + item.id
 						}).append("<span style=\"margin-right: 2%;font-weight: bold;\">"+ item.titulo)
 					)
-					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger"}).text("Tomar")))
+					.append($("<a>",{"href":"sb_estd2.html"}).append($("<button>",{"class":"btn btn-danger","style":"float:right"}).text("Tomar")))
 				),
 				$('<div>').attr({
 							'class':'panel-collapse collapse',
@@ -162,5 +162,3 @@ $(document).ready(function(){
 	$("#avaz").click(cargarA);
 
 })
-
-
