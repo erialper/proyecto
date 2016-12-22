@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$("#divDondeVanLosPanels").append($("<div>", {"class":"panel panel-default"})
 				.append($("<div>",{"class":"panel-heading"})
 					.append($("<h3>").text("titulo: "+p.titulo))
-					.append($("<a>",{"class": "btn btn-default"})
+					.append($("<a>",{"class": "btn btn-default", "href": "crearproyecto.html"})
 						.text("Editar"))
 					.append($("<a>",{"class": "btn btn-default"})
 						.text("Borrar")
