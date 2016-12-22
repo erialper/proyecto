@@ -61,6 +61,7 @@ function setLocalStorage(){
     $("#usrname").text("");
     $("#psw").text("");	
     */
+    localStorage.setItem("SignUp", 1 );
 }
 
 
